@@ -356,6 +356,393 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-38-nr-38",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104936"
+    },
+    {
+      "id": "707a674d1836cc4be9f1f11958c44326820c851a95b11fba4d8c2f6bdf244381",
+      "titulo": "Fiscalização de Segurança e Saúde no Trabalho",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:29.676062"
+    },
+    {
+      "id": "02dadeb49be691a98135f5ab93e0b2620c741a153c95e61815320be70590bd81",
+      "titulo": "Normas Regulamentadoras (NR) e legislação de Segurança e Saúde no Trabalho",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:29.676215"
+    },
+    {
+      "id": "5820adb0cf787ae27ae2d968dd4bd8c4e829ea2d4972c535f547a9cab332439e",
+      "titulo": "eSocial",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/e-social",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "eSocial / SST"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676576"
+    },
+    {
+      "id": "f46d113f7a677ab64b0369af16846775b3a3abb34f25d92f23bd89483eebaadc",
+      "titulo": "Sindicatos",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676725"
+    },
+    {
+      "id": "1d78d6c3a037eb40b337b461b152269c86b7782c8fa0d18ae68c8db43df2454a",
+      "titulo": "Cadastro de Entidades",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/cadastro-de-entidades",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676737"
+    },
+    {
+      "id": "e59e950d97670dc44a1f12d0daee102e94c1c6fb43f33ad093d8ad290cc27e58",
+      "titulo": "Central Sindical",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/central-sindical",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676748"
+    },
+    {
+      "id": "1532c94dd28982a1c96bf103f0d6a81323771a39b236615a3ebe5e4bc22283dd",
+      "titulo": "Contribuição Sindical",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/contribuicao-sindical",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676761"
+    },
+    {
+      "id": "14da9026b20e4b16921172917ee4b9e39e309d92806c8cf3af960cb4c9a47133",
+      "titulo": "Mediação",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/mediacao",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676772"
+    },
+    {
+      "id": "3480938ab651a85c939e358fdb2386325f5c6708060b74632043e6c36c3ed280",
+      "titulo": "Painel de Relações do Trabalho",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/portal-de-relacoes-do-trabalho",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676785"
+    },
+    {
+      "id": "172d6be5422618f058e5b41c8d86691eb8f772c5ff04ed9298266a420a6f3ef1",
+      "titulo": "Registro de Instrumento Coletivo de Trabalho (Convenção, Acordo e Termo Aditivo)",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/convencoes-e-acordos-coletivos-de-trabalho",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.676800"
+    },
+    {
+      "id": "12e5b69b934609ecd216ff06c9e214e6a529b530a6a7179f46b274cc2d375e42",
+      "titulo": "Comissão Nacional de Erradicação do Trabalho Infantil (CONAETI)",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/composicao/orgaos-colegiados/comissao-nacional-de-erradicacao-do-trabalho-infantil-conaeti",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "NR-17 / Ergonomia"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:29.676976"
+    },
+    {
+      "id": "64f9c40b21abc401623ddb84b8cd267864e79d7e6381c8b096de2b685541f0fc",
+      "titulo": "Categorias",
+      "url": "https://www.gov.br/pt-br/categorias",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.677061"
+    },
+    {
+      "id": "d11b8a343de1a4c9087ee178b62ea97b92d39f5a7c6b60a491ef973b77b25ae6",
+      "titulo": "Galeria de Aplicativos",
+      "url": "https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos",
+      "fonte": "MTE - Portarias SST",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:28:29.677301"
+    },
+    {
+      "id": "e38c66aedc005103634a166707c48c7df200f9d540246798fc1a65b80949b6d9",
+      "titulo": "NR-1 - DISPOSIÇÕES GERAIS E GERENCIAMENTO DE RISCOS OCUPACIONAIS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295126"
+    },
+    {
+      "id": "2f3a36726eea868c7170bcef8cde02c2bb79c79481988d6089ee1643c58b4d44",
+      "titulo": "NR-7 - PROGRAMA DE CONTROLE MÉDICO DE SAÚDE OCUPACIONAL",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-7-nr-7",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295209"
+    },
+    {
+      "id": "d137cfd5a9ecdaf03c84fa686d0e5eae1b561b1ccff567338e3edabfcdb490ce",
+      "titulo": "NR-10 - SEGURANÇA EM INSTALAÇÕES E SERVIÇOS EM ELETRICIDADE",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-10-nr-10",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295250"
+    },
+    {
+      "id": "baa9c0d24bca8826dbd64583610b9035851929058815c507290ddf66e0bf7709",
+      "titulo": "NR-11 - TRANSPORTE, MOVIMENTAÇÃO, ARMAZENAGEM E MANUSEIO DE MATERIAIS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-11-nr-11",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295266"
+    },
+    {
+      "id": "8bd7b6b9cdc0101dc15f7cfc322f5b0ed60b6234601f0e4538e755ca4534f34b",
+      "titulo": "NR-12 - SEGURANÇA NO TRABALHO EM MÁQUINAS E EQUIPAMENTOS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-nr-12",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295280"
+    },
+    {
+      "id": "10e37a3d1b33771b7578037b30b6bdb5532341b99e31f83a40542a4a8e534695",
+      "titulo": "NR-13 - CALDEIRAS, VASOS DE PRESSÃO E TUBULAÇÕES E TANQUES METÁLICOS DE ARMAZENAMENTO",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-13-nr-13",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295296"
+    },
+    {
+      "id": "c5865ead57c838c770c63552dff6baec71e4031c02ba2e2e7c533012d90ff918",
+      "titulo": "NR-14 - FORNOS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-14-nr-14",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295307"
+    },
+    {
+      "id": "b802320813dbe6e6b05b623d175452d75b1b15d07fd8c03f0f8841fed398d657",
+      "titulo": "NR-15 - ATIVIDADES E OPERAÇÕES INSALUBRES",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295321"
+    },
+    {
+      "id": "40ef8759bfd3b510d47fcc1e1e5eec2f923e5dbd96138a5e7b99788c6bea2320",
+      "titulo": "NR-16 - ATIVIDADES E OPERAÇÕES PERIGOSAS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-16-nr-16",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295335"
+    },
+    {
+      "id": "a4f533fa1a649f781cb9a90841fb30b08f89b94133fa4690232a946a4f749cb5",
+      "titulo": "NR-17 - ERGONOMIA",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-17-nr-17",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR",
+        "NR-17 / Ergonomia"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295345"
+    },
+    {
+      "id": "2681964053a827ec1e4235be75a2ce594e4fad49e210ac3f32056a53d50dd80b",
+      "titulo": "NR-18 - SEGURANÇA E SAÚDE NO TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-18-nr-18",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR",
+        "Segurança do Trabalho"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295363"
+    },
+    {
+      "id": "a51b6f9446e1e7fd392ae4ce95010fa495785e3b281aca173ce2ddd778bed58c",
+      "titulo": "NR-19 - EXPLOSIVOS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-19-nr-19",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T12:28:30.295375"
+    },
+    {
+      "id": "60660a7c3787c88a87ef5ac8cb435957cd58ecc7f45679407e557e0416cfba96",
+      "titulo": "NR-20 - SEGURANÇA E SAÚDE NO TRABALHO COM INFLAMÁVEIS E COMBUSTÍVEIS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-20-nr-20",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295391"
+    },
+    {
+      "id": "695c289dc314c7a1edf330936a136684c060b05e16af259a7e18fc27e944f019",
+      "titulo": "NR-22 - SEGURANÇA E SAÚDE OCUPACIONAL NA MINERAÇÃO",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-22-nr-22",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295418"
+    },
+    {
+      "id": "1048f97e155eedd14140c9fc10483551ad67557212c478eb5323b3971db5a6a9",
+      "titulo": "NR-27 - REGISTRO PROFISSIONAL DO TÉCNICO DE SEGURANÇA DO TRABALHO (REVOGADA)",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-27-nr-27",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295480"
+    },
+    {
+      "id": "586cc5e4e782d323fa153ba0ec9811f9e75c87d46b231343701675977f63e1a4",
+      "titulo": "NR-29 - NORMA REGULAMENTADORA DE SEGURANÇA E SAÚDE NO TRABALHO PORTUÁRIO",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-29-nr-29",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295507"
+    },
+    {
+      "id": "2f480ec73aff3215587e75d1314b6b80ffbc16a211f5f738e04639506cfb5bdd",
+      "titulo": "NR-30 - SEGURANÇA E SAÚDE NO TRABALHO AQUAVIÁRIO",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-30-nr-30",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295522"
+    },
+    {
+      "id": "a0b00fcffc93cfe05d082f49c263906ff0598b167f8e8df3d51e0d58083ca793",
+      "titulo": "NR-31 - SEGURANÇA E SAÚDE NO TRABALHO NA AGRICULTURA, PECUÁRIA SILVICULTURA, EXPLORAÇÃO FLORESTAL E AQUICULTURA",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-31-nr-31",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295538"
+    },
+    {
+      "id": "e1873814e3c23d06056fee92247c3725e2e5da7bfac23da576d346d2f4e2923c",
+      "titulo": "NR-32 - SEGURANÇA E SAÚDE NO TRABALHO EM SERVIÇOS DE SAÚDE",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-32-nr-32",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295553"
+    },
+    {
+      "id": "6e7349034ca5fc34cfee8d548ee61ff2ce3c4e06321557ca73609a40ee11a49b",
+      "titulo": "NR-36 - SEGURANÇA E SAÚDE NO TRABALHO EM EMPRESAS DE ABATE E PROCESSAMENTO DE CARNES E DERIVADOS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-36-nr-36",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295603"
+    },
+    {
+      "id": "7b2c279da732b3fe176569bbb1f2a0fe7c376876ce5f4b942466cacd40e7ef00",
+      "titulo": "NR-38 - SEGURANÇA E SAÚDE NO TRABALHO NAS ATIVIDADES DE LIMPEZA URBANA E MANEJO DE RESÍDUOS SÓLIDOS",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-38-nr-38",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295631"
+    },
+    {
+      "id": "abdf83bc02deb00b9b65267a12544a2d785734fa44c0342259b907fbe848692e",
+      "titulo": "TABELA DE CLASSIFICAÇÃO DAS NORMAS REGULAMENTADORAS DE SEGURANÇA E SAÚDE NO TRABALHO",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/tabela-de-classificacao-tipificacao-de-nrs-e-anexos-2022_12_14.pdf",
+      "fonte": "MTE - Normas Regulamentadoras",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:28:30.295650"
     }
   ]
 }
