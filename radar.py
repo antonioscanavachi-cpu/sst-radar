@@ -6,62 +6,84 @@ from datetime import datetime
 
 # ============================================================
 # SST RADAR
-# Monitoramento inicial do Ministério do Trabalho e Emprego
+# Sistema de monitoramento de Saúde e Segurança do Trabalho
 # ============================================================
-
-URL_PORTARIAS = (
-    "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/"
-    "inspecao-do-trabalho/seguranca-e-saude-no-trabalho/"
-    "sst-portarias"
-)
-
-URL_NRS = (
-    "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/"
-    "inspecao-do-trabalho/seguranca-e-saude-no-trabalho/"
-    "ctpp-nrs/normas-regulamentadoras-nrs"
-)
 
 ARQUIVO_HISTORICO = "historico.json"
 
-PALAVRAS_CHAVE = [
-    "segurança",
-    "saúde",
-    "segurança e saúde",
-    "norma regulamentadora",
-    "NR-01",
-    "NR-1",
-    "NR-17",
-    "NR-35",
-    "ergonomia",
-    "ergonôm",
-    "AET",
-    "avaliação ergonômica",
-    "PGR",
-    "GRO",
-    "risco ocupacional",
-    "riscos psicossociais",
-    "acidente de trabalho",
-    "doença ocupacional",
-    "CAT",
-    "eSocial",
-    "insalubridade",
-    "periculosidade",
-]
+FONTES = {
+    "MTE - Portarias SST": (
+        "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/"
+        "inspecao-do-trabalho/seguranca-e-saude-no-trabalho/"
+        "sst-portarias"
+    ),
+    "MTE - Normas Regulamentadoras": (
+        "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/"
+        "inspecao-do-trabalho/seguranca-e-saude-no-trabalho/"
+        "ctpp-nrs/normas-regulamentadoras-nrs"
+    )
+}
+
+TEMAS = {
+    "NR-01 / GRO / PGR": [
+        "nr-01", "nr-1", "gro", "pgr",
+        "gerenciamento de riscos",
+        "programa de gerenciamento de riscos"
+    ],
+
+    "NR-17 / Ergonomia": [
+        "nr-17", "ergonomia", "ergonômica",
+        "ergonômico", "aet",
+        "avaliação ergonômica"
+    ],
+
+    "Riscos psicossociais": [
+        "psicossocial", "psicossociais",
+        "organização do trabalho",
+        "saúde mental"
+    ],
+
+    "Acidentes e doenças ocupacionais": [
+        "acidente de trabalho",
+        "acidente do trabalho",
+        "doença ocupacional",
+        "doença relacionada ao trabalho",
+        "cat"
+    ],
+
+    "Insalubridade / Periculosidade": [
+        "insalubridade",
+        "periculosidade"
+    ],
+
+    "eSocial / SST": [
+        "esocial",
+        "s-2210",
+        "s-2220",
+        "s-2240"
+    ],
+
+    "Segurança do Trabalho": [
+        "segurança do trabalho",
+        "saúde e segurança",
+        "saúde ocupacional",
+        "segurança e saúde no trabalho"
+    ]
+}
 
 
 def baixar_pagina(url):
-    """Baixa uma página oficial."""
-    
-    cabecalho = {
+
+    cabecalhos = {
         "User-Agent": (
             "SST-Radar/1.0 "
-            "(monitoramento de informações públicas de SST)"
+            "(monitoramento público de informações de SST)"
         )
     }
 
     resposta = requests.get(
         url,
-        headers=cabecalho,
+        headers=cabecalhos,
         timeout=30
     )
 
@@ -70,32 +92,44 @@ def baixar_pagina(url):
     return resposta.text
 
 
-def criar_id(texto):
-    """Cria um identificador único para uma publicação."""
-    
+def criar_id(titulo, endereco):
+
+    texto = titulo.strip() + "|" + endereco.strip()
+
     return hashlib.sha256(
         texto.encode("utf-8")
     ).hexdigest()
 
 
 def carregar_historico():
-    """Carrega as publicações já encontradas."""
-    
+
     try:
+
         with open(
             ARQUIVO_HISTORICO,
             "r",
             encoding="utf-8"
         ) as arquivo:
-            return json.load(arquivo)
 
-    except (FileNotFoundError, json.JSONDecodeError):
-        return {"publicacoes": []}
+            dados = json.load(arquivo)
+
+            if "publicacoes" not in dados:
+                dados["publicacoes"] = []
+
+            return dados
+
+    except (
+        FileNotFoundError,
+        json.JSONDecodeError
+    ):
+
+        return {
+            "publicacoes": []
+        }
 
 
 def salvar_historico(historico):
-    """Salva o histórico atualizado."""
-    
+
     with open(
         ARQUIVO_HISTORICO,
         "w",
@@ -110,223 +144,282 @@ def salvar_historico(historico):
         )
 
 
-def eh_relevante(texto):
-    """Verifica se o conteúdo possui algum termo de SST."""
-    
+def identificar_temas(texto):
+
     texto = texto.lower()
 
-    for palavra in PALAVRAS_CHAVE:
-        if palavra.lower() in texto:
-            return True
+    encontrados = []
 
-    return False
+    for tema, palavras in TEMAS.items():
 
+        for palavra in palavras:
 
-def analisar_portarias(html):
-    """Extrai links encontrados na página de Portarias SST."""
+            if palavra.lower() in texto:
 
-    soup = BeautifulSoup(html, "html.parser")
+                encontrados.append(tema)
 
-    resultados = []
+                break
 
-    for link in soup.find_all("a", href=True):
-
-        titulo = link.get_text(" ", strip=True)
-
-        endereco = link.get("href")
-
-        if not titulo:
-            continue
-
-        texto = titulo.lower()
-
-        if (
-            "portaria" in texto
-            or "nr-" in texto
-            or "norma" in texto
-        ):
-
-            if endereco.startswith("/"):
-                endereco = (
-                    "https://www.gov.br" + endereco
-                )
-
-            identificador = criar_id(
-                titulo + endereco
-            )
-
-            resultados.append({
-                "id": identificador,
-                "titulo": titulo,
-                "url": endereco,
-                "fonte": "MTE - Portarias SST",
-                "data_coleta": datetime.now().isoformat()
-            })
-
-    return resultados
+    return encontrados
 
 
-def analisar_nrs(html):
-    """Extrai informações da página de NRs."""
+def classificar_importancia(temas):
 
-    soup = BeautifulSoup(html, "html.parser")
+    # Prioridade maior para legislação e temas
+    # diretamente relacionados ao trabalho.
+
+    if (
+        "NR-01 / GRO / PGR" in temas
+        or "NR-17 / Ergonomia" in temas
+        or "Riscos psicossociais" in temas
+    ):
+        return "IMPORTANTE"
+
+    if (
+        "Acidentes e doenças ocupacionais" in temas
+        or "Insalubridade / Periculosidade" in temas
+        or "eSocial / SST" in temas
+    ):
+        return "ATENÇÃO"
+
+    return "INFORMATIVO"
+
+
+def extrair_links(html, fonte):
+
+    soup = BeautifulSoup(
+        html,
+        "html.parser"
+    )
 
     resultados = []
 
-    for link in soup.find_all("a", href=True):
+    for link in soup.find_all(
+        "a",
+        href=True
+    ):
 
-        titulo = link.get_text(" ", strip=True)
+        titulo = link.get_text(
+            " ",
+            strip=True
+        )
 
-        endereco = link.get("href")
+        endereco = link.get(
+            "href"
+        )
 
-        if not titulo:
+        if not titulo or not endereco:
             continue
 
-        if "NR-" in titulo.upper():
+        if endereco.startswith("/"):
 
-            if endereco.startswith("/"):
-                endereco = (
-                    "https://www.gov.br" + endereco
-                )
-
-            identificador = criar_id(
-                titulo + endereco
+            endereco = (
+                "https://www.gov.br"
+                + endereco
             )
 
-            resultados.append({
-                "id": identificador,
-                "titulo": titulo,
-                "url": endereco,
-                "fonte": "MTE - Normas Regulamentadoras",
-                "data_coleta": datetime.now().isoformat()
-            })
+        texto_completo = (
+            titulo
+            + " "
+            + endereco
+        )
+
+        temas = identificar_temas(
+            texto_completo
+        )
+
+        # Se não encontrou nenhum tema,
+        # não entra no radar.
+
+        if not temas:
+            continue
+
+        identificador = criar_id(
+            titulo,
+            endereco
+        )
+
+        resultados.append({
+
+            "id": identificador,
+
+            "titulo": titulo,
+
+            "url": endereco,
+
+            "fonte": fonte,
+
+            "temas": temas,
+
+            "importancia":
+                classificar_importancia(
+                    temas
+                ),
+
+            "data_coleta":
+                datetime.now().isoformat()
+
+        })
 
     return resultados
 
 
 def executar():
 
+    print()
     print("=" * 70)
-    print("SST RADAR")
-    print("Monitoramento automático de Saúde e Segurança do Trabalho")
+    print("              SST RADAR")
+    print("Monitoramento de Saúde e Segurança do Trabalho")
     print("=" * 70)
 
+    agora = datetime.now()
+
     print(
-        "Execução:",
-        datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        "Data:",
+        agora.strftime(
+            "%d/%m/%Y %H:%M:%S"
+        )
     )
 
     historico = carregar_historico()
 
     ids_existentes = {
-        item["id"]
+        item.get("id")
         for item in historico["publicacoes"]
     }
 
-    novas_publicacoes = []
+    novas = []
 
-    # --------------------------------------------------------
-    # MTE - PORTARIAS SST
-    # --------------------------------------------------------
+    # ========================================================
+    # CONSULTAR FONTES
+    # ========================================================
 
-    print("\nConsultando MTE - Portarias SST...")
+    for nome_fonte, endereco in FONTES.items():
 
-    try:
-
-        html = baixar_pagina(URL_PORTARIAS)
-
-        publicacoes = analisar_portarias(html)
-
+        print()
         print(
-            f"Publicações encontradas: {len(publicacoes)}"
+            "Consultando:",
+            nome_fonte
         )
 
-        for publicacao in publicacoes:
+        try:
 
-            if publicacao["id"] not in ids_existentes:
+            html = baixar_pagina(
+                endereco
+            )
 
-                historico["publicacoes"].append(
-                    publicacao
-                )
+            resultados = extrair_links(
+                html,
+                nome_fonte
+            )
 
-                novas_publicacoes.append(
-                    publicacao
-                )
+            print(
+                "Itens relevantes encontrados:",
+                len(resultados)
+            )
 
-    except Exception as erro:
+            for item in resultados:
 
-        print(
-            "Erro ao consultar Portarias SST:",
-            erro
-        )
+                if item["id"] not in ids_existentes:
 
-    # --------------------------------------------------------
-    # MTE - NORMAS REGULAMENTADORAS
-    # --------------------------------------------------------
+                    historico[
+                        "publicacoes"
+                    ].append(item)
 
-    print("\nConsultando MTE - Normas Regulamentadoras...")
+                    ids_existentes.add(
+                        item["id"]
+                    )
 
-    try:
+                    novas.append(item)
 
-        html = baixar_pagina(URL_NRS)
+        except Exception as erro:
 
-        publicacoes = analisar_nrs(html)
+            print(
+                "ERRO:",
+                erro
+            )
 
-        print(
-            f"Informações encontradas: {len(publicacoes)}"
-        )
+    # ========================================================
+    # LIMITAR HISTÓRICO
+    # ========================================================
 
-        for publicacao in publicacoes:
+    # Mantemos os 1.000 registros mais recentes.
 
-            if publicacao["id"] not in ids_existentes:
-
-                historico["publicacoes"].append(
-                    publicacao
-                )
-
-                novas_publicacoes.append(
-                    publicacao
-                )
-
-    except Exception as erro:
-
-        print(
-            "Erro ao consultar NRs:",
-            erro
-        )
-
-    salvar_historico(historico)
-
-    # --------------------------------------------------------
-    # RESULTADO
-    # --------------------------------------------------------
-
-    print("\n" + "=" * 70)
-
-    print(
-        f"Novas publicações detectadas: "
-        f"{len(novas_publicacoes)}"
+    historico["publicacoes"] = (
+        historico["publicacoes"][-1000:]
     )
 
-    if novas_publicacoes:
+    salvar_historico(
+        historico
+    )
 
-        print("\nNOVAS PUBLICAÇÕES:\n")
+    # ========================================================
+    # RESULTADO
+    # ========================================================
 
-        for item in novas_publicacoes:
+    print()
+    print("=" * 70)
 
-            print("Fonte:", item["fonte"])
-            print("Título:", item["titulo"])
-            print("Link:", item["url"])
+    print(
+        "NOVAS PUBLICAÇÕES:",
+        len(novas)
+    )
+
+    if novas:
+
+        print()
+
+        for item in novas:
+
+            print(
+                "IMPORTÂNCIA:",
+                item["importancia"]
+            )
+
+            print(
+                "FONTE:",
+                item["fonte"]
+            )
+
+            print(
+                "TEMAS:",
+                ", ".join(
+                    item["temas"]
+                )
+            )
+
+            print(
+                "TÍTULO:",
+                item["titulo"]
+            )
+
+            print(
+                "LINK:",
+                item["url"]
+            )
+
             print("-" * 70)
 
     else:
 
         print(
-            "\nNenhuma nova publicação encontrada."
+            "Nenhuma nova publicação relevante."
         )
 
-    print("\nHistórico atualizado.")
+    print()
+    print(
+        "Total armazenado no histórico:",
+        len(
+            historico["publicacoes"]
+        )
+    )
+
+    print()
+    print(
+        "SST Radar finalizado."
+    )
 
 
 if __name__ == "__main__":
+
     executar()
