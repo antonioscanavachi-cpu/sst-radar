@@ -743,6 +743,182 @@
       ],
       "importancia": "INFORMATIVO",
       "data_coleta": "2026-08-26T12:28:30.295650"
+    },
+    {
+      "id": "9f80a756b7f2fa8d98e05e9d8a4837ae0758386d8c4a298ab804b0e9e962ca40",
+      "titulo": "Coordenação-Geral de Educação, Saúde e Segurança no Trabalho (01.700.3)",
+      "url": "https://www.gov.br/inss/pt-br/composicao/diretoria-de-atendimento/coordenacao-geral-de-educacao-desenvolvimento-e-carreiras",
+      "fonte": "INSS - Notícias",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T12:49:43.702794"
+    },
+    {
+      "id": "86125fce155b2aaab58e2c8fe04f8d368e29d3aa4e09d2092d0c51f876c32e8b",
+      "titulo": "Diferença entre auxílio por incapacidade temporária comum ou decorrente de acidente de trabalho",
+      "url": "https://www.gov.br/inss/pt-br/direitos-e-deveres/beneficios-por-incapacidade/diferenca-entre-auxilio-por-incapacidade-temporaria-comum-ou-decorrente-de-acidente-de-trabalho",
+      "fonte": "INSS - Notícias",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:43.703881"
+    },
+    {
+      "id": "1a65197e9b6e58e4801df8b8689f68d7f10a3d072dafaccc584c5828c226c742",
+      "titulo": "Categorias de segurados",
+      "url": "https://www.gov.br/inss/pt-br/saiba-mais/seus-direitos-e-deveres/categorias-de-segurados",
+      "fonte": "INSS - Notícias",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:43.704469"
+    },
+    {
+      "id": "e1f75b4a2741f66b0e11042752a1bae89cb6d1464d365fe4e7a2237c6c0ebaae",
+      "titulo": "Registrar Comunicação de Acidente de Trabalho - CAT",
+      "url": "https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat",
+      "fonte": "INSS - Notícias",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:43.704781"
+    },
+    {
+      "id": "86cb0a1d682f7ed4fd9195ad98ccd6775005dc6fc39b91b09d7927544fccc108",
+      "titulo": "Excluir Mensalidade de Associação ou Sindicato no Benefício",
+      "url": "https://www.gov.br/pt-br/servicos/solicitar-exclusao-de-desconto-de-mensalidade-associativa-em-beneficio-previdenciario",
+      "fonte": "INSS - Notícias",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:43.705267"
+    },
+    {
+      "id": "399fd26705ba0bcf0b3d526d4e0be64a17342e01fba4d3ca8879ffc1dfcae254",
+      "titulo": "Trabalho, Emprego e Previdência",
+      "url": "https://www.gov.br/pt-br/categorias/trabalho-e-previdencia",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349063"
+    },
+    {
+      "id": "240a654199c050227ed9309d5aea5821c586f079a91867911a881955f1677591",
+      "titulo": "Previdência",
+      "url": "https://www.gov.br/pt-br/categorias/trabalho-e-previdencia/previdencia",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349075"
+    },
+    {
+      "id": "16423dc57fcd3d43972a858b61577d67dbc6dd8937525e0897d0295d1fc99553",
+      "titulo": "Comunicações e Requerimentos",
+      "url": "https://www.gov.br/pt-br/categorias/trabalho-e-previdencia/previdencia/comunicacoes-e-requerimentos",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349090"
+    },
+    {
+      "id": "0bdfac9063c96713e891679a4c243d30a67942e96e2da9393dcc7c8cc5554a11",
+      "titulo": "Iniciar",
+      "url": "https://cadastro-cat.inss.gov.br/CATInternet/faces/pages/cadastramento/cadastramentoCat.xhtml",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349102"
+    },
+    {
+      "id": "2665db83e1c0ac1cf490a832e821e566c904bbf222feef7cafaff4eb225056b0",
+      "titulo": "Compartilhe no Whatsapp",
+      "url": "https://api.whatsapp.com/send?text=https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349135"
+    },
+    {
+      "id": "d815fd75b5afebf44fcfd567257545ad97a5823de55e1958fca41bb6ff0e053b",
+      "titulo": "Compartilhe no Facebook",
+      "url": "http://www.facebook.com/sharer.php?u=https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349150"
+    },
+    {
+      "id": "b0127a4e8fa388b8cd7bffa95513480f61c77c7412d52568814d3e1fc635437e",
+      "titulo": "Compartilhe no Linkedin",
+      "url": "https://www.linkedin.com/shareArticle?mini=true&url=https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat&title=Cadastrar%20Comunica%C3%A7%C3%A3o%20de%20Acidente%20de%20Trabalho",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349178"
+    },
+    {
+      "id": "989fa1a5849523940976a124f31fc06cfc62b51c556bb52879ee71926d6f52b2",
+      "titulo": "Compartilhar essa página",
+      "url": "https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349194"
+    },
+    {
+      "id": "3469bead475a3e11c99df0863a9bd3f0388c2a6ca616ed2f7206c20bb85a5370",
+      "titulo": "Cadastro de Comunicação de Acidente de Trabalho",
+      "url": "https://cadastro-cat.inss.gov.br/CATInternet/faces/pages/cadastramento/cadastramentoCat.xhtml",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349227"
+    },
+    {
+      "id": "4d73d7079fdb73834f452e916ec32dbe3e677a4601b999d1beea3120ba65816e",
+      "titulo": "Site de Cadastro de Comunicação de Acidente de Trabalho",
+      "url": "https://cadastro-cat.inss.gov.br/CATInternet/faces/pages/cadastramento/cadastramentoCat.xhtml",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349265"
+    },
+    {
+      "id": "1d6563d6d53f6a84965c4fba940ba36a9dfcac29af5dc052c29dbd71a75aa089",
+      "titulo": "Consultar Comunicação de Acidente de Trabalho",
+      "url": "https://www.gov.br/pt-br/servicos/consultar-comunicacao-de-acidente-de-trabalho-cat?origem=servico&id=52",
+      "fonte": "INSS - CAT",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T12:49:45.349304"
     }
   ]
 }
