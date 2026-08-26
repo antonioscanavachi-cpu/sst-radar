@@ -52,7 +52,7 @@ jobs:
           git diff --cached --quiet || git commit -m "Atualiza relatório SST"
           git push
 
-          - name: Reclassificar histórico
+      - name: Reclassificar histórico
         run: |
           python reclassificar.py
 
