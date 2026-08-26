@@ -42,3 +42,7 @@ jobs:
           git diff --cached --quiet || git commit -m "Atualiza histórico do SST Radar"
 
           git push
+
+      - name: Testar DOU
+        run: |
+          python dou.py
