@@ -2,7 +2,6 @@ name: SST Radar
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 11 * * *"
 
@@ -11,7 +10,6 @@ permissions:
 
 jobs:
   executar-radar:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -36,18 +34,15 @@ jobs:
         run: |
           git config user.name "SST Radar"
           git config user.email "sst-radar@users.noreply.github.com"
-
           git add historico.json
-
           git diff --cached --quiet || git commit -m "Atualiza histórico do SST Radar"
-
           git push
 
       - name: Testar DOU
         run: |
           python dou.py
 
-          - name: Gerar relatório SST
+      - name: Gerar relatório SST
         run: |
           python relatorio.py
 
