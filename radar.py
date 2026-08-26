@@ -17,10 +17,25 @@ FONTES = {
         "inspecao-do-trabalho/seguranca-e-saude-no-trabalho/"
         "sst-portarias"
     ),
+
     "MTE - Normas Regulamentadoras": (
         "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/"
         "inspecao-do-trabalho/seguranca-e-saude-no-trabalho/"
         "ctpp-nrs/normas-regulamentadoras-nrs"
+    ),
+
+    "INSS - Notícias": (
+        "https://www.gov.br/inss/pt-br/assuntos/noticias"
+    ),
+
+    "INSS - Legislação": (
+        "https://www.gov.br/inss/pt-br/centrais-de-conteudo/"
+        "legislacao"
+    ),
+
+    "INSS - CAT": (
+        "https://www.gov.br/pt-br/servicos/"
+        "registrar-comunicacao-de-acidente-de-trabalho-cat"
     )
 }
 
