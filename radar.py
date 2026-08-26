@@ -36,6 +36,10 @@ FONTES = {
     "INSS - CAT": (
         "https://www.gov.br/pt-br/servicos/"
         "registrar-comunicacao-de-acidente-de-trabalho-cat"
+    ),
+
+"Fundacentro": (
+        "https://www.gov.br/fundacentro/pt-br"
     )
 }
 
