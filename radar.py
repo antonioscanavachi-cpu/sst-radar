@@ -385,6 +385,7 @@ def extrair_links(html, fonte):
 
             "importancia":
                 classificar_importancia(
+                    titulo,
                     temas
                 ),
 
