@@ -919,6 +919,72 @@
       ],
       "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:49:45.349304"
+    },
+    {
+      "id": "b04654563c93614f3bda0445c76e5f7f523604a5649051db2ce1bb44995ac819",
+      "titulo": "Curso aborda impactos dos agrotóxicos na saúde, no trabalho e no meio ambiente Atividade será realizada nos dias 26 e 27 de agosto, em São Paulo, com participação presencial e transmissão on-line",
+      "url": "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/agosto/curso-aborda-impactos-dos-agrotoxicos-na-saude-no-trabalho-e-no-meio-ambiente",
+      "fonte": "Fundacentro",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T13:01:09.249460"
+    },
+    {
+      "id": "3b919e7c0a4b1f155ae9cecec77798717b6366803fffb9d2a9953a6078d41465",
+      "titulo": "I Congresso Regional de Saúde e Segurança no Trabalho na Pesca Artesanal prorroga prazo para submissão de propostas Submissões de Grupos de Trabalho, Oficinas e Espaços de Trocas e Experiências podem ser realizadas até 2 de agosto; já o novo período para envio de atividades, trabalhos técnicos e científicos é de 10 a 31 de agosto",
+      "url": "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/julho/i-congresso-regional-de-saude-e-seguranca-no-trabalho-na-pesca-artesanal-prorroga-prazo-para-submissao-de-propostas",
+      "fonte": "Fundacentro",
+      "temas": [
+        "Segurança do Trabalho"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-08-26T13:01:09.249502"
+    },
+    {
+      "id": "94913feeacfd817ec1dd5d422c15bccf1dc9fafa1e890f0f3bc27a694d2d4045",
+      "titulo": "Cursos on-line abordam conteúdos sobre NR-12 Aulas apresentam conhecimentos técnicos essenciais ao processo de segurança em máquinas e equipamentos e tratam de apreciação e redução de riscos",
+      "url": "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/agosto/cursos-on-line-abordam-conteudos-sobre-nr-12",
+      "fonte": "Fundacentro",
+      "temas": [
+        "NR-01 / GRO / PGR"
+      ],
+      "importancia": "IMPORTANTE",
+      "data_coleta": "2026-08-26T13:01:09.249588"
+    },
+    {
+      "id": "0c867d252e2da70dd953b52a074303b4ace876b289de3065591a8da4c998c82a",
+      "titulo": "Aplicativo Monitor IBUTG",
+      "url": "https://www.gov.br/fundacentro/pt-br/centrais-de-conteudo/aplicativo-monitor-ibutg",
+      "fonte": "Fundacentro",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T13:01:09.250257"
+    },
+    {
+      "id": "4f80162258219cff9a3f58cd891259a70dfc4ed3a263fc2dc0f306f2cbbf78f1",
+      "titulo": "Aplicativo RBSO",
+      "url": "https://www.gov.br/fundacentro/pt-br/centrais-de-conteudo/aplicativo-rbso",
+      "fonte": "Fundacentro",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T13:01:09.250269"
+    },
+    {
+      "id": "218ce300278c767e30a5abe8e477f319862bada968ef389a09f7ecdfd4d7aad0",
+      "titulo": "Aplicativo SST Fácil",
+      "url": "https://www.gov.br/fundacentro/pt-br/centrais-de-conteudo/aplicativo-sst-facil",
+      "fonte": "Fundacentro",
+      "temas": [
+        "Acidentes e doenças ocupacionais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-08-26T13:01:09.250283"
     }
   ]
 }
