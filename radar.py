@@ -162,7 +162,6 @@ def salvar_historico(historico):
             indent=2
         )
 
-
 def identificar_temas(texto):
 
     texto = texto.lower()
@@ -181,28 +180,142 @@ def identificar_temas(texto):
 
     return encontrados
 
+def classificar_importancia(titulo, temas):
 
-def classificar_importancia(temas):
+    texto = (
+        titulo + " " +
+        " ".join(temas)
+    ).lower()
 
-    # Prioridade maior para legislação e temas
-    # diretamente relacionados ao trabalho.
+    pontuacao = 0
 
-    if (
-        "NR-01 / GRO / PGR" in temas
-        or "NR-17 / Ergonomia" in temas
-        or "Riscos psicossociais" in temas
-    ):
+    # ========================================================
+    # LEGISLAÇÃO E NORMAS
+    # ========================================================
+
+    if "nr-01" in texto or "nr-1" in texto:
+        pontuacao += 10
+
+    if "nr-17" in texto:
+        pontuacao += 10
+
+    if "nr-18" in texto:
+        pontuacao += 8
+
+    if "nr-35" in texto:
+        pontuacao += 8
+
+    if "portaria" in texto:
+        pontuacao += 6
+
+    if "instrução normativa" in texto:
+        pontuacao += 6
+
+    if "decreto" in texto:
+        pontuacao += 5
+
+    # ========================================================
+    # GRO / PGR
+    # ========================================================
+
+    if "gro" in texto:
+        pontuacao += 8
+
+    if "pgr" in texto:
+        pontuacao += 8
+
+    if "gerenciamento de riscos" in texto:
+        pontuacao += 8
+
+    # ========================================================
+    # ERGONOMIA
+    # ========================================================
+
+    if "ergonomia" in texto:
+        pontuacao += 8
+
+    if "ergonômica" in texto:
+        pontuacao += 8
+
+    if "ergonômico" in texto:
+        pontuacao += 8
+
+    if "aet" in texto:
+        pontuacao += 8
+
+    # ========================================================
+    # RISCOS PSICOSSOCIAIS
+    # ========================================================
+
+    if "psicossocial" in texto:
+        pontuacao += 10
+
+    if "saúde mental" in texto:
+        pontuacao += 7
+
+    if "organização do trabalho" in texto:
+        pontuacao += 6
+
+    # ========================================================
+    # ACIDENTES E DOENÇAS
+    # ========================================================
+
+    if "acidente de trabalho" in texto:
+        pontuacao += 8
+
+    if "acidente do trabalho" in texto:
+        pontuacao += 8
+
+    if "doença ocupacional" in texto:
+        pontuacao += 8
+
+    if "doença relacionada ao trabalho" in texto:
+        pontuacao += 8
+
+    if "cat" in texto:
+        pontuacao += 6
+
+    # ========================================================
+    # INSALUBRIDADE / PERICULOSIDADE
+    # ========================================================
+
+    if "insalubridade" in texto:
+        pontuacao += 7
+
+    if "periculosidade" in texto:
+        pontuacao += 7
+
+    # ========================================================
+    # eSOCIAL
+    # ========================================================
+
+    if "esocial" in texto:
+        pontuacao += 6
+
+    if "s-2210" in texto:
+        pontuacao += 8
+
+    if "s-2220" in texto:
+        pontuacao += 8
+
+    if "s-2240" in texto:
+        pontuacao += 8
+
+    # ========================================================
+    # CLASSIFICAÇÃO
+    # ========================================================
+
+    if pontuacao >= 15:
+
         return "IMPORTANTE"
 
-    if (
-        "Acidentes e doenças ocupacionais" in temas
-        or "Insalubridade / Periculosidade" in temas
-        or "eSocial / SST" in temas
-    ):
+    elif pontuacao >= 8:
+
         return "ATENÇÃO"
 
-    return "INFORMATIVO"
+    else:
 
+        return "INFORMATIVO"
 
 def extrair_links(html, fonte):
 
