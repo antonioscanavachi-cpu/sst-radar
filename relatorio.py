@@ -178,13 +178,133 @@ def gerar_relatorio():
 
                 linhas.append("")
 
+            importancia = item.get(
+                "importancia",
+                "Não classificada"
+            )
+
             linhas.append(
                 "**Importância:** "
-                + item.get(
-                    "importancia",
-                    "Não classificada"
-                )
+                + importancia
             )
+
+            # Motivo da classificação
+            motivos = []
+
+            texto = (
+                item.get("titulo", "")
+                + " "
+                + " ".join(
+                    item.get(
+                        "temas",
+                        []
+                    )
+                )
+            ).lower()
+
+            if (
+                "nr-01" in texto
+                or "nr-1" in texto
+            ):
+                motivos.append(
+                    "NR-1 / Gerenciamento de Riscos"
+                )
+
+            if "nr-17" in texto:
+                motivos.append(
+                    "NR-17 / Ergonomia"
+                )
+
+            if (
+                "ergonomia" in texto
+                or "ergonômic" in texto
+            ):
+                motivos.append(
+                    "Ergonomia"
+                )
+
+            if (
+                "psicossocial" in texto
+                or "saúde mental" in texto
+            ):
+                motivos.append(
+                    "Riscos psicossociais / Saúde mental"
+                )
+
+            if (
+                "pgr" in texto
+                or "gro" in texto
+                or "gerenciamento de riscos" in texto
+            ):
+                motivos.append(
+                    "PGR / GRO"
+                )
+
+            if (
+                "acidente de trabalho" in texto
+                or "acidente do trabalho" in texto
+            ):
+                motivos.append(
+                    "Acidente de trabalho"
+                )
+
+            if (
+                "doença ocupacional" in texto
+                or "doença relacionada ao trabalho" in texto
+            ):
+                motivos.append(
+                    "Doença ocupacional"
+                )
+
+            if "cat" in texto:
+                motivos.append(
+                    "CAT"
+                )
+
+            if "insalubridade" in texto:
+                motivos.append(
+                    "Insalubridade"
+                )
+
+            if "periculosidade" in texto:
+                motivos.append(
+                    "Periculosidade"
+                )
+
+            if (
+                "esocial" in texto
+                or "s-2210" in texto
+                or "s-2220" in texto
+                or "s-2240" in texto
+            ):
+                motivos.append(
+                    "eSocial / SST"
+                )
+
+            if "portaria" in texto:
+                motivos.append(
+                    "Alteração ou ato normativo"
+                )
+
+            if motivos:
+
+                linhas.append(
+                    "**Motivo:** "
+                    + "; ".join(
+                        dict.fromkeys(
+                            motivos
+                        )
+                    )
+                )
+
+            else:
+
+                linhas.append(
+                    "**Motivo:** "
+                    "Conteúdo relacionado a SST"
+                )
+
+            linhas.append("")
 
             linhas.append("")
 
