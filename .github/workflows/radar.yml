@@ -46,3 +46,13 @@ jobs:
       - name: Testar DOU
         run: |
           python dou.py
+
+          - name: Gerar relatório SST
+        run: |
+          python relatorio.py
+
+      - name: Salvar relatório
+        run: |
+          git add relatorio_sst.md
+          git diff --cached --quiet || git commit -m "Atualiza relatório SST"
+          git push
