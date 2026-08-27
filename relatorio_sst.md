@@ -2,17 +2,17 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 27/08/2026 20:11:11
+**Gerado em:** 27/08/2026 20:38:00
 
-**Total de registros:** 108
+**Total de registros:** 36
 
 ---
 
 ## 📊 Resumo
 
 - 🔴 Importantes: 0
-- 🟠 Atenção: 24
-- 🔵 Informativas: 84
+- 🟠 Atenção: 5
+- 🔵 Informativas: 31
 
 ## 🟠 Publicações que merecem atenção
 
@@ -72,146 +72,6 @@
 
 ---
 
-### NR-19 - EXPLOSIVOS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-19-nr-19
-
----
-
-### NR-18 - SEGURANÇA E SAÚDE NO TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR, Segurança do Trabalho
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-18-nr-18
-
----
-
-### NR-17 - ERGONOMIA
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR, NR-17 / Ergonomia
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; NR-17 / Ergonomia; Ergonomia; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-17-nr-17
-
----
-
-### NR-16 - ATIVIDADES E OPERAÇÕES PERIGOSAS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-16-nr-16
-
----
-
-### NR-15 - ATIVIDADES E OPERAÇÕES INSALUBRES
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15
-
----
-
-### NR-14 - FORNOS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-14-nr-14
-
----
-
-### NR-13 - CALDEIRAS, VASOS DE PRESSÃO E TUBULAÇÕES E TANQUES METÁLICOS DE ARMAZENAMENTO
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-13-nr-13
-
----
-
-### NR-12 - SEGURANÇA NO TRABALHO EM MÁQUINAS E EQUIPAMENTOS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-nr-12
-
----
-
-### NR-11 - TRANSPORTE, MOVIMENTAÇÃO, ARMAZENAGEM E MANUSEIO DE MATERIAIS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-11-nr-11
-
----
-
-### NR-1 - DISPOSIÇÕES GERAIS E GERENCIAMENTO DE RISCOS OCUPACIONAIS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1
-
----
-
 ### Comissão Nacional de Erradicação do Trabalho Infantil (CONAETI)
 
 **Fonte:** MTE - Portarias SST
@@ -223,114 +83,6 @@
 
 
 **Link:** https://www.gov.br/trabalho-e-emprego/pt-br/composicao/orgaos-colegiados/comissao-nacional-de-erradicacao-do-trabalho-infantil-conaeti
-
----
-
-### NR-17 - ERGONOMIA
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; NR-17 / Ergonomia; Ergonomia
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-17-nr-17
-
----
-
-### NR-1 - DISPOSIÇÕES GERAIS E GERENCIAMENTO DE RISCOS OCUPACIONAIS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1
-
----
-
-### Portarias de Designação de Fiscais de TED, ACT, Protocolos de Intenções e instrumentos congêneres
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** ATENÇÃO
-**Motivo:** Alteração ou ato normativo
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-de-designacao-de-fiscais-de-ted-act-protocolos-de-intencoes-e-instrumentos-congeneres
-
----
-
-### Portarias Internas
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** ATENÇÃO
-**Motivo:** Alteração ou ato normativo
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-internas-2
-
----
-
-### Portarias
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** ATENÇÃO
-**Motivo:** Alteração ou ato normativo
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-1
-
----
-
-### SST Portarias
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** ATENÇÃO
-**Motivo:** Alteração ou ato normativo
-
-
-**Link:** 
-
----
-
-### Portarias de Designação de Fiscais de TED, ACT, Protocolos de Intenções e instrumentos congêneres
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** ATENÇÃO
-**Motivo:** Alteração ou ato normativo
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-de-designacao-de-fiscais-de-ted-act-protocolos-de-intencoes-e-instrumentos-congeneres
-
----
-
-### Portarias Internas
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** ATENÇÃO
-**Motivo:** Alteração ou ato normativo
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-internas-2
-
----
-
-### Portarias
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** ATENÇÃO
-**Motivo:** Alteração ou ato normativo
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-1
 
 ---
 
@@ -417,20 +169,6 @@
 
 
 **Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/agosto/curso-aborda-impactos-dos-agrotoxicos-na-saude-no-trabalho-e-no-meio-ambiente
-
----
-
-### Consultar Comunicação de Acidente de Trabalho
-
-**Fonte:** INSS - CAT
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Acidente de trabalho
-
-
-**Link:** https://www.gov.br/pt-br/servicos/consultar-comunicacao-de-acidente-de-trabalho-cat?origem=servico&id=52
 
 ---
 
@@ -602,9 +340,149 @@
 
 ---
 
-### NR-38 - SEGURANÇA E SAÚDE NO TRABALHO NAS ATIVIDADES DE LIMPEZA URBANA E MANEJO DE RESÍDUOS SÓLIDOS
+### Galeria de Aplicativos
 
-**Fonte:** MTE - Normas Regulamentadoras
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** CAT
+
+
+**Link:** https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos
+
+---
+
+### Categorias
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** CAT
+
+
+**Link:** https://www.gov.br/pt-br/categorias
+
+---
+
+### Registro de Instrumento Coletivo de Trabalho (Convenção, Acordo e Termo Aditivo)
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/convencoes-e-acordos-coletivos-de-trabalho
+
+---
+
+### Painel de Relações do Trabalho
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/portal-de-relacoes-do-trabalho
+
+---
+
+### Mediação
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/mediacao
+
+---
+
+### Contribuição Sindical
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/contribuicao-sindical
+
+---
+
+### Central Sindical
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/central-sindical
+
+---
+
+### Cadastro de Entidades
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/cadastro-de-entidades
+
+---
+
+### Sindicatos
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** Acidentes e doenças ocupacionais
+
+**Importância:** INFORMATIVO
+**Motivo:** CAT
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos
+
+---
+
+### eSocial
+
+**Fonte:** MTE - Portarias SST
+
+**Temas:** eSocial / SST
+
+**Importância:** INFORMATIVO
+**Motivo:** eSocial / SST
+
+
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/e-social
+
+---
+
+### Fiscalização de Segurança e Saúde no Trabalho
+
+**Fonte:** MTE - Portarias SST
 
 **Temas:** Segurança do Trabalho
 
@@ -612,146 +490,18 @@
 **Motivo:** Conteúdo relacionado a SST
 
 
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-38-nr-38
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho
 
 ---
 
-### NR-36 - SEGURANÇA E SAÚDE NO TRABALHO EM EMPRESAS DE ABATE E PROCESSAMENTO DE CARNES E DERIVADOS
+### Cadastro de Empregadores em Ajustamento de Conduta (CEAC) - Normativos
 
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
+**Fonte:** MTE - Portarias SST
 
 **Importância:** INFORMATIVO
 **Motivo:** Conteúdo relacionado a SST
 
 
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-36-nr-36
-
----
-
-### NR-32 - SEGURANÇA E SAÚDE NO TRABALHO EM SERVIÇOS DE SAÚDE
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-32-nr-32
-
----
-
-### NR-31 - SEGURANÇA E SAÚDE NO TRABALHO NA AGRICULTURA, PECUÁRIA SILVICULTURA, EXPLORAÇÃO FLORESTAL E AQUICULTURA
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-31-nr-31
-
----
-
-### NR-30 - SEGURANÇA E SAÚDE NO TRABALHO AQUAVIÁRIO
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-30-nr-30
-
----
-
-### NR-29 - NORMA REGULAMENTADORA DE SEGURANÇA E SAÚDE NO TRABALHO PORTUÁRIO
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-29-nr-29
-
----
-
-### NR-27 - REGISTRO PROFISSIONAL DO TÉCNICO DE SEGURANÇA DO TRABALHO (REVOGADA)
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-27-nr-27
-
----
-
-### NR-22 - SEGURANÇA E SAÚDE OCUPACIONAL NA MINERAÇÃO
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-22-nr-22
-
----
-
-### NR-20 - SEGURANÇA E SAÚDE NO TRABALHO COM INFLAMÁVEIS E COMBUSTÍVEIS
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-20-nr-20
-
----
-
-### NR-10 - SEGURANÇA EM INSTALAÇÕES E SERVIÇOS EM ELETRICIDADE
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** NR-01 / GRO / PGR
-
-**Importância:** INFORMATIVO
-**Motivo:** NR-1 / Gerenciamento de Riscos; PGR / GRO
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-10-nr-10
-
----
-
-### NR-7 - PROGRAMA DE CONTROLE MÉDICO DE SAÚDE OCUPACIONAL
-
-**Fonte:** MTE - Normas Regulamentadoras
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-7-nr-7
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/cadastro-de-empregadores-em-ajustamento-de-conduta-ceac-normativos
 
 ---
