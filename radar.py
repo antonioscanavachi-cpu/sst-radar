@@ -422,6 +422,70 @@ def extrair_links(html, fonte):
                 + endereco
             )
 
+        titulo_lower = titulo.lower()
+
+        # ====================================================
+        # FILTRO DE PÁGINAS INSTITUCIONAIS
+        # ====================================================
+
+        pagina_institucional = False
+
+        # Páginas gerais de portarias
+        if titulo_lower in [
+            "portarias",
+            "portarias internas",
+            "sst portarias",
+            "instruções normativas",
+            "instruções normativas",
+        ]:
+            pagina_institucional = True
+
+        # Páginas gerais de legislação e normas
+        if titulo_lower in [
+            "legislação",
+            "legislação de segurança e saúde no trabalho",
+            "normas regulamentadoras",
+            "normas regulamentadoras (nr)",
+            "normas regulamentadoras (nr) e legislação de segurança e saúde no trabalho",
+        ]:
+            pagina_institucional = True
+
+        # Página de consulta/serviço
+        if (
+            titulo_lower.startswith("consultar ")
+            or titulo_lower.startswith("consulta ")
+        ):
+            pagina_institucional = True
+
+        # Páginas permanentes das NRs
+        if titulo_lower.startswith("nr-"):
+
+            # Uma página permanente normalmente começa
+            # diretamente com NR-1, NR-2, NR-3 etc.
+            partes = titulo_lower.split(" ", 1)
+
+            if len(partes) >= 1:
+
+                identificacao_nr = partes[0]
+
+                if identificacao_nr.startswith("nr-"):
+                    pagina_institucional = True
+
+        # Páginas de designação administrativa
+        if (
+            "portarias de designação" in titulo_lower
+            or "designação de fiscais" in titulo_lower
+        ):
+            pagina_institucional = True
+
+        # Se for página institucional, ignora.
+        if pagina_institucional:
+            continue
+
+        # ====================================================
+        # IDENTIFICAÇÃO DOS TEMAS
+        # ====================================================
+
         texto_completo = (
             titulo
             + " "
@@ -437,6 +501,10 @@ def extrair_links(html, fonte):
 
         if not temas:
             continue
+
+        # ====================================================
+        # CRIAÇÃO DO REGISTRO
+        # ====================================================
 
         identificador = criar_id(
             titulo,
