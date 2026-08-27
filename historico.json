@@ -14,7 +14,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-1",
       "fonte": "MTE - Portarias SST",
       "data_coleta": "2026-08-26T12:22:06.266410",
-      "importancia": "INFORMATIVO"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "704f939310b5d53a766ac00789652b08dea238a8fcfa91403f3174367705257a",
@@ -38,7 +38,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-internas-2",
       "fonte": "MTE - Portarias SST",
       "data_coleta": "2026-08-26T12:22:06.266430",
-      "importancia": "INFORMATIVO"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "dd8c5d95fd8046ccf96f107993502dba705bc39206f0fa6975e0cdd05e7a237c",
@@ -46,7 +46,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-de-designacao-de-fiscais-de-ted-act-protocolos-de-intencoes-e-instrumentos-congeneres",
       "fonte": "MTE - Portarias SST",
       "data_coleta": "2026-08-26T12:22:06.266436",
-      "importancia": "INFORMATIVO"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "911aabac7cc0ec0acb2ea46f4c5fa337a4d2255388e969476e00b8815fff88cb",
@@ -54,7 +54,7 @@
       "url": "",
       "fonte": "MTE - Portarias SST",
       "data_coleta": "2026-08-26T12:22:06.266775",
-      "importancia": "INFORMATIVO"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "11c7d08d52f1be9e1b1a9e722434380c41905dcf0e1d944d5f23eb40ca314f4c",
@@ -70,7 +70,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-1",
       "fonte": "MTE - Portarias SST",
       "data_coleta": "2026-08-26T12:22:06.266993",
-      "importancia": "INFORMATIVO"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "704f939310b5d53a766ac00789652b08dea238a8fcfa91403f3174367705257a",
@@ -94,7 +94,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-internas-2",
       "fonte": "MTE - Portarias SST",
       "data_coleta": "2026-08-26T12:22:06.267010",
-      "importancia": "INFORMATIVO"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "dd8c5d95fd8046ccf96f107993502dba705bc39206f0fa6975e0cdd05e7a237c",
@@ -102,7 +102,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-de-designacao-de-fiscais-de-ted-act-protocolos-de-intencoes-e-instrumentos-congeneres",
       "fonte": "MTE - Portarias SST",
       "data_coleta": "2026-08-26T12:22:06.267016",
-      "importancia": "INFORMATIVO"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "818209d09bc7daaf302c190585adb29eecdb3764e82bedca5f95fe8f5b286490",
@@ -110,7 +110,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104704",
-      "importancia": "IMPORTANTE"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "abcc936a925ab9aabb782f1ed5598a565f81746ee147188d79f4f7a539d9be9a",
@@ -182,7 +182,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-10-nr-10",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104767",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "0f3b13c24df044f1227c27a7aecb6668aff45e18de69bf57926e306297f519b8",
@@ -190,7 +190,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-11-nr-11",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104772",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "60ecff676ba4132b0f6b9ae9c8582ace5ea2302eeb414e50693b3750f402f97d",
@@ -198,7 +198,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-nr-12",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104777",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "f1dda4fb614dc01e73cdb8b5c2f8af681b4476a197508332d0761aff1b25ed71",
@@ -206,7 +206,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-13-nr-13",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104783",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "4ce98b04689c888d6ccf3859a1027e1ae9d319ab9af333ab2eee50d03ed32daf",
@@ -214,7 +214,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-14-nr-14",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104787",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "854f73d3643c6dae3bf60ee9dd089ecff1a481d81c3044673a4af2730d604427",
@@ -222,7 +222,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104792",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "f0f6d0d551013aa8093a09693cdba90b78570ca30c251a94585602329c685bc3",
@@ -230,7 +230,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-16-nr-16",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104797",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "6b93e941b66640306010456a716aac9526c86887352b0645d5e8a293ff973e1a",
@@ -238,7 +238,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-17-nr-17",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104801",
-      "importancia": "IMPORTANTE"
+      "importancia": "ATENÇÃO"
     },
     {
       "id": "1775e1e5484e01043682be885c6fef3a9969917d6505d372bc117d4d53fddcef",
@@ -246,7 +246,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-18-nr-18",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104807",
-      "importancia": "IMPORTANTE"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "4b103927562afb361b7561243e6f2210c2378c99d00d9efd8063e941ec58b1bb",
@@ -254,7 +254,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-19-nr-19",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104811",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "9a773871e4861f9adc7f4ac89f7a6530f0749a358e8dc664a22b7b934036b499",
@@ -382,7 +382,7 @@
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-35-nr-35",
       "fonte": "MTE - Normas Regulamentadoras",
       "data_coleta": "2026-08-26T12:22:07.104920",
-      "importancia": "ATENÇÃO"
+      "importancia": "INFORMATIVO"
     },
     {
       "id": "f856fd79cb0fad4caea58f9bb49e47923c70ada3941ec7a39ff02fe93a81f630",
@@ -526,7 +526,7 @@
       "temas": [
         "NR-17 / Ergonomia"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:29.676976"
     },
     {
@@ -559,7 +559,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295126"
     },
     {
@@ -581,7 +581,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "INFORMATIVO",
       "data_coleta": "2026-08-26T12:28:30.295250"
     },
     {
@@ -592,7 +592,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295266"
     },
     {
@@ -603,7 +603,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295280"
     },
     {
@@ -614,7 +614,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295296"
     },
     {
@@ -625,7 +625,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295307"
     },
     {
@@ -636,7 +636,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295321"
     },
     {
@@ -647,7 +647,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295335"
     },
     {
@@ -659,7 +659,7 @@
         "NR-01 / GRO / PGR",
         "NR-17 / Ergonomia"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295345"
     },
     {
@@ -671,7 +671,7 @@
         "NR-01 / GRO / PGR",
         "Segurança do Trabalho"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295363"
     },
     {
@@ -682,7 +682,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "ATENÇÃO",
       "data_coleta": "2026-08-26T12:28:30.295375"
     },
     {
@@ -968,7 +968,7 @@
       "temas": [
         "Acidentes e doenças ocupacionais"
       ],
-      "importancia": "ATENÇÃO",
+      "importancia": "INFORMATIVO",
       "data_coleta": "2026-08-26T12:49:45.349304"
     },
     {
@@ -979,7 +979,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "INFORMATIVO",
       "data_coleta": "2026-08-26T13:01:09.249460"
     },
     {
@@ -1001,7 +1001,7 @@
       "temas": [
         "NR-01 / GRO / PGR"
       ],
-      "importancia": "IMPORTANTE",
+      "importancia": "INFORMATIVO",
       "data_coleta": "2026-08-26T13:01:09.249588"
     },
     {
