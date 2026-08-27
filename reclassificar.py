@@ -211,6 +211,43 @@ def classificar_importancia(titulo, temas):
 
     return "INFORMATIVO"
 
+def eh_pagina_institucional(titulo):
+
+    titulo_lower = titulo.lower().strip()
+
+    paginas = [
+        "portarias",
+        "portarias internas",
+        "sst portarias",
+        "instruções normativas",
+        "instrucoes normativas",
+        "legislação",
+        "legislação de segurança e saúde no trabalho",
+        "normas regulamentadoras",
+        "normas regulamentadoras (nr)",
+        "normas regulamentadoras (nr) e legislação de segurança e saúde no trabalho",
+    ]
+
+    if titulo_lower in paginas:
+        return True
+
+    if (
+        titulo_lower.startswith("consultar ")
+        or titulo_lower.startswith("consulta ")
+    ):
+        return True
+
+    if titulo_lower.startswith("nr-"):
+        return True
+
+    if "portarias de designação" in titulo_lower:
+        return True
+
+    if "designação de fiscais" in titulo_lower:
+        return True
+
+    return False
+
 def executar():
 
     print("=" * 70)
@@ -241,6 +278,41 @@ def executar():
         "ATENÇÃO": 0,
         "INFORMATIVO": 0
     }
+
+    # ========================================================
+    # REMOVER PÁGINAS INSTITUCIONAIS DO HISTÓRICO
+    # ========================================================
+
+    historico_original = len(publicacoes)
+
+    publicacoes_filtradas = []
+
+    removidas = 0
+
+    for item in publicacoes:
+
+        titulo = item.get(
+            "titulo",
+            ""
+        )
+
+        if eh_pagina_institucional(titulo):
+
+            removidas += 1
+
+            continue
+
+        publicacoes_filtradas.append(
+            item
+        )
+
+    historico["publicacoes"] = (
+        publicacoes_filtradas
+    )
+
+    publicacoes = (
+        historico["publicacoes"]
+    )
 
     for item in publicacoes:
 
@@ -285,6 +357,19 @@ def executar():
     print()
     print("RECLASSIFICAÇÃO CONCLUÍDA")
     print()
+
+    print(
+        "Páginas institucionais removidas:",
+        removidas
+    )
+
+    print(
+        "Registros mantidos:",
+        len(publicacoes)
+    )
+
+    print()
+    
     print(
         "🔴 Importantes:",
         contagem["IMPORTANTE"]
