@@ -182,140 +182,212 @@ def identificar_temas(texto):
 
 def classificar_importancia(titulo, temas):
 
-    texto = (
-        titulo + " " +
-        " ".join(temas)
-    ).lower()
+    titulo_lower = titulo.lower()
 
-    pontuacao = 0
+    texto_temas = " ".join(temas).lower()
 
-    # ========================================================
-    # LEGISLAÇÃO E NORMAS
-    # ========================================================
-
-    if "nr-01" in texto or "nr-1" in texto:
-        pontuacao += 10
-
-    if "nr-17" in texto:
-        pontuacao += 10
-
-    if "nr-18" in texto:
-        pontuacao += 8
-
-    if "nr-35" in texto:
-        pontuacao += 8
-
-    if "portaria" in texto:
-        pontuacao += 6
-
-    if "instrução normativa" in texto:
-        pontuacao += 6
-
-    if "decreto" in texto:
-        pontuacao += 5
+    texto = titulo_lower + " " + texto_temas
 
     # ========================================================
-    # GRO / PGR
+    # CONTEÚDOS QUE NÃO DEVEM GERAR ALERTA
     # ========================================================
 
-    if "gro" in texto:
-        pontuacao += 8
+    termos_informativos = [
+        "curso",
+        "cursos",
+        "capacitação",
+        "treinamento",
+        "evento",
+        "seminário",
+        "palestra",
+        "workshop",
+        "webinar",
+        "campanha",
+        "inscrição",
+        "agenda",
+        "consultar",
+        "consulta",
+        "serviço",
+        "serviços",
+    ]
 
-    if "pgr" in texto:
-        pontuacao += 8
+    conteudo_informativo = any(
+        termo in titulo_lower
+        for termo in termos_informativos
+    )
 
-    if "gerenciamento de riscos" in texto:
-        pontuacao += 8
+    # ========================================================
+    # INDICADORES DE ALTERAÇÃO NORMATIVA
+    # ========================================================
+
+    alteracoes = [
+        "altera",
+        "alteração",
+        "altera a redação",
+        "nova redação",
+        "modifica",
+        "modificação",
+        "aprova",
+        "estabelece",
+        "regulamenta",
+        "revoga",
+        "inclui",
+        "exclui",
+        "prorroga",
+        "dispõe sobre",
+        "entra em vigor",
+    ]
+
+    eh_alteracao = any(
+        termo in titulo_lower
+        for termo in alteracoes
+    )
+
+    # ========================================================
+    # NORMAS RELEVANTES
+    # ========================================================
+
+    nr_relevante = any(
+        termo in titulo_lower
+        for termo in [
+            "nr-01",
+            "nr-1",
+            "nr-17",
+            "nr-18",
+            "nr-35",
+        ]
+    )
+
+    # ========================================================
+    # TEMAS CRÍTICOS
+    # ========================================================
+
+    tema_critico = any(
+        termo in texto
+        for termo in [
+            "riscos psicossociais",
+            "risco psicossocial",
+            "saúde mental",
+            "doença ocupacional",
+            "doença relacionada ao trabalho",
+            "acidente de trabalho",
+            "acidente do trabalho",
+            "insalubridade",
+            "periculosidade",
+        ]
+    )
 
     # ========================================================
     # ERGONOMIA
     # ========================================================
 
-    if "ergonomia" in texto:
-        pontuacao += 8
-
-    if "ergonômica" in texto:
-        pontuacao += 8
-
-    if "ergonômico" in texto:
-        pontuacao += 8
-
-    if "aet" in texto:
-        pontuacao += 8
-
-    # ========================================================
-    # RISCOS PSICOSSOCIAIS
-    # ========================================================
-
-    if "psicossocial" in texto:
-        pontuacao += 10
-
-    if "saúde mental" in texto:
-        pontuacao += 7
-
-    if "organização do trabalho" in texto:
-        pontuacao += 6
+    ergonomia = any(
+        termo in texto
+        for termo in [
+            "ergonomia",
+            "ergonômico",
+            "ergonômica",
+            "avaliação ergonômica",
+            "análise ergonômica",
+            "aet",
+        ]
+    )
 
     # ========================================================
-    # ACIDENTES E DOENÇAS
+    # PGR / GRO
     # ========================================================
 
-    if "acidente de trabalho" in texto:
-        pontuacao += 8
-
-    if "acidente do trabalho" in texto:
-        pontuacao += 8
-
-    if "doença ocupacional" in texto:
-        pontuacao += 8
-
-    if "doença relacionada ao trabalho" in texto:
-        pontuacao += 8
-
-    if "cat" in texto:
-        pontuacao += 6
+    pgr_gro = any(
+        termo in texto
+        for termo in [
+            "pgr",
+            "gro",
+            "gerenciamento de riscos",
+            "gerenciamento de riscos ocupacionais",
+        ]
+    )
 
     # ========================================================
-    # INSALUBRIDADE / PERICULOSIDADE
+    # ALTERAÇÃO NORMATIVA DE ALTA RELEVÂNCIA
     # ========================================================
 
-    if "insalubridade" in texto:
-        pontuacao += 7
+    if eh_alteracao:
 
-    if "periculosidade" in texto:
-        pontuacao += 7
+        if nr_relevante:
+            return "IMPORTANTE"
 
-    # ========================================================
-    # eSOCIAL
-    # ========================================================
+        if tema_critico:
+            return "IMPORTANTE"
 
-    if "esocial" in texto:
-        pontuacao += 6
+        if ergonomia:
+            return "IMPORTANTE"
 
-    if "s-2210" in texto:
-        pontuacao += 8
-
-    if "s-2220" in texto:
-        pontuacao += 8
-
-    if "s-2240" in texto:
-        pontuacao += 8
+        if pgr_gro:
+            return "IMPORTANTE"
 
     # ========================================================
-    # CLASSIFICAÇÃO
+    # ATOS OFICIAIS
     # ========================================================
 
-    if pontuacao >= 15:
+    ato_oficial = any(
+        termo in titulo_lower
+        for termo in [
+            "portaria",
+            "decreto",
+            "instrução normativa",
+            "resolução",
+            "lei ",
+            "medida provisória",
+        ]
+    )
 
-        return "IMPORTANTE"
+    if ato_oficial:
 
-    elif pontuacao >= 8:
+        if (
+            nr_relevante
+            or tema_critico
+            or ergonomia
+            or pgr_gro
+        ):
+            return "IMPORTANTE"
 
         return "ATENÇÃO"
 
-    else:
+    # ========================================================
+    # CURSOS, EVENTOS E SERVIÇOS
+    # ========================================================
 
+    if conteudo_informativo:
         return "INFORMATIVO"
+
+    # ========================================================
+    # CONTEÚDO TÉCNICO
+    # ========================================================
+
+    if ergonomia:
+        return "ATENÇÃO"
+
+    if tema_critico:
+        return "ATENÇÃO"
+
+    if pgr_gro:
+        return "ATENÇÃO"
+
+    # ========================================================
+    # ACIDENTES
+    # ========================================================
+
+    if (
+        "acidente de trabalho" in titulo_lower
+        or "acidente do trabalho" in titulo_lower
+    ):
+        return "ATENÇÃO"
+
+    # ========================================================
+    # PADRÃO
+    # ========================================================
+
+    return "INFORMATIVO"
 
 def extrair_links(html, fonte):
 
