@@ -237,8 +237,21 @@ def eh_pagina_institucional(titulo):
     ):
         return True
 
+    # Páginas permanentes das NRs
+    # Ex.: "NR-1 - DISPOSIÇÕES GERAIS..."
     if titulo_lower.startswith("nr-"):
-        return True
+
+        partes = titulo_lower.split(" - ", 1)
+
+        if len(partes) == 2:
+
+            numero_nr = partes[0].replace(
+                "nr-",
+                ""
+            ).strip()
+
+            if numero_nr.isdigit():
+                return True
 
     if "portarias de designação" in titulo_lower:
         return True
