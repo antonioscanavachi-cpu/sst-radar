@@ -2,7 +2,7 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 27/08/2026 20:38:00
+**Gerado em:** 28/08/2026 21:58:21
 
 **Total de registros:** 36
 
