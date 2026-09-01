@@ -538,19 +538,17 @@ def extrair_links(html, fonte):
                 if numero_nr.isdigit():
                     continue
 
-        # ====================================================
-        # IDENTIFICAÇÃO DOS TEMAS
-        # ====================================================
+       # ====================================================
+# IDENTIFICAÇÃO DOS TEMAS
+# ====================================================
 
-        texto_completo = (
-            titulo
-            + " "
-            + endereco
-        )
+# Identifica o tema somente pelo título.
+# A URL não participa da identificação para evitar
+# falsos positivos em páginas institucionais.
 
-        temas = identificar_temas(
-            texto_completo
-        )
+temas = identificar_temas(
+    titulo
+)
 
         if not temas:
             continue
