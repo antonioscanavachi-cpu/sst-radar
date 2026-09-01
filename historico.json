@@ -17,138 +17,6 @@
       "importancia": "INFORMATIVO"
     },
     {
-      "id": "707a674d1836cc4be9f1f11958c44326820c851a95b11fba4d8c2f6bdf244381",
-      "titulo": "Fiscalização de Segurança e Saúde no Trabalho",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Segurança do Trabalho"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676062"
-    },
-    {
-      "id": "5820adb0cf787ae27ae2d968dd4bd8c4e829ea2d4972c535f547a9cab332439e",
-      "titulo": "eSocial",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/e-social",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "eSocial / SST"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676576"
-    },
-    {
-      "id": "f46d113f7a677ab64b0369af16846775b3a3abb34f25d92f23bd89483eebaadc",
-      "titulo": "Sindicatos",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676725"
-    },
-    {
-      "id": "1d78d6c3a037eb40b337b461b152269c86b7782c8fa0d18ae68c8db43df2454a",
-      "titulo": "Cadastro de Entidades",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/cadastro-de-entidades",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676737"
-    },
-    {
-      "id": "e59e950d97670dc44a1f12d0daee102e94c1c6fb43f33ad093d8ad290cc27e58",
-      "titulo": "Central Sindical",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/central-sindical",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676748"
-    },
-    {
-      "id": "1532c94dd28982a1c96bf103f0d6a81323771a39b236615a3ebe5e4bc22283dd",
-      "titulo": "Contribuição Sindical",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/contribuicao-sindical",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676761"
-    },
-    {
-      "id": "14da9026b20e4b16921172917ee4b9e39e309d92806c8cf3af960cb4c9a47133",
-      "titulo": "Mediação",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/mediacao",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676772"
-    },
-    {
-      "id": "3480938ab651a85c939e358fdb2386325f5c6708060b74632043e6c36c3ed280",
-      "titulo": "Painel de Relações do Trabalho",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/portal-de-relacoes-do-trabalho",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676785"
-    },
-    {
-      "id": "172d6be5422618f058e5b41c8d86691eb8f772c5ff04ed9298266a420a6f3ef1",
-      "titulo": "Registro de Instrumento Coletivo de Trabalho (Convenção, Acordo e Termo Aditivo)",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/convencoes-e-acordos-coletivos-de-trabalho",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.676800"
-    },
-    {
-      "id": "12e5b69b934609ecd216ff06c9e214e6a529b530a6a7179f46b274cc2d375e42",
-      "titulo": "Comissão Nacional de Erradicação do Trabalho Infantil (CONAETI)",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/composicao/orgaos-colegiados/comissao-nacional-de-erradicacao-do-trabalho-infantil-conaeti",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "NR-17 / Ergonomia"
-      ],
-      "importancia": "ATENÇÃO",
-      "data_coleta": "2026-08-26T12:28:29.676976"
-    },
-    {
-      "id": "64f9c40b21abc401623ddb84b8cd267864e79d7e6381c8b096de2b685541f0fc",
-      "titulo": "Categorias",
-      "url": "https://www.gov.br/pt-br/categorias",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.677061"
-    },
-    {
-      "id": "d11b8a343de1a4c9087ee178b62ea97b92d39f5a7c6b60a491ef973b77b25ae6",
-      "titulo": "Galeria de Aplicativos",
-      "url": "https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos",
-      "fonte": "MTE - Portarias SST",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:28:29.677301"
-    },
-    {
       "id": "abdf83bc02deb00b9b65267a12544a2d785734fa44c0342259b907fbe848692e",
       "titulo": "TABELA DE CLASSIFICAÇÃO DAS NORMAS REGULAMENTADORAS DE SEGURANÇA E SAÚDE NO TRABALHO",
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/tabela-de-classificacao-tipificacao-de-nrs-e-anexos-2022_12_14.pdf",
@@ -182,17 +50,6 @@
       "data_coleta": "2026-08-26T12:49:43.703881"
     },
     {
-      "id": "1a65197e9b6e58e4801df8b8689f68d7f10a3d072dafaccc584c5828c226c742",
-      "titulo": "Categorias de segurados",
-      "url": "https://www.gov.br/inss/pt-br/saiba-mais/seus-direitos-e-deveres/categorias-de-segurados",
-      "fonte": "INSS - Notícias",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:49:43.704469"
-    },
-    {
       "id": "e1f75b4a2741f66b0e11042752a1bae89cb6d1464d365fe4e7a2237c6c0ebaae",
       "titulo": "Registrar Comunicação de Acidente de Trabalho - CAT",
       "url": "https://www.gov.br/pt-br/servicos/registrar-comunicacao-de-acidente-de-trabalho-cat",
@@ -213,39 +70,6 @@
       ],
       "importancia": "INFORMATIVO",
       "data_coleta": "2026-08-26T12:49:43.705267"
-    },
-    {
-      "id": "399fd26705ba0bcf0b3d526d4e0be64a17342e01fba4d3ca8879ffc1dfcae254",
-      "titulo": "Trabalho, Emprego e Previdência",
-      "url": "https://www.gov.br/pt-br/categorias/trabalho-e-previdencia",
-      "fonte": "INSS - CAT",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:49:45.349063"
-    },
-    {
-      "id": "240a654199c050227ed9309d5aea5821c586f079a91867911a881955f1677591",
-      "titulo": "Previdência",
-      "url": "https://www.gov.br/pt-br/categorias/trabalho-e-previdencia/previdencia",
-      "fonte": "INSS - CAT",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:49:45.349075"
-    },
-    {
-      "id": "16423dc57fcd3d43972a858b61577d67dbc6dd8937525e0897d0295d1fc99553",
-      "titulo": "Comunicações e Requerimentos",
-      "url": "https://www.gov.br/pt-br/categorias/trabalho-e-previdencia/previdencia/comunicacoes-e-requerimentos",
-      "fonte": "INSS - CAT",
-      "temas": [
-        "Acidentes e doenças ocupacionais"
-      ],
-      "importancia": "INFORMATIVO",
-      "data_coleta": "2026-08-26T12:49:45.349090"
     },
     {
       "id": "0bdfac9063c96713e891679a4c243d30a67942e96e2da9393dcc7c8cc5554a11",
