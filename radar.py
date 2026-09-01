@@ -482,6 +482,7 @@ def extrair_links(html, fonte):
             "legislacao",
             "normas regulamentadoras",
             "normas regulamentadoras (nr)",
+            "normas regulamentadoras (nr) e legislação de segurança e saúde no trabalho",
             "fiscalização de segurança e saúde no trabalho",
             "sindicatos",
             "cadastro de entidades",
