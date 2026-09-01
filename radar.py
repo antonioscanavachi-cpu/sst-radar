@@ -2,7 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import hashlib
+import re
 from datetime import datetime
+from urllib.parse import urljoin, urlparse
+
 
 # ============================================================
 # SST RADAR
@@ -10,6 +13,11 @@ from datetime import datetime
 # ============================================================
 
 ARQUIVO_HISTORICO = "historico.json"
+
+
+# ============================================================
+# FONTES
+# ============================================================
 
 FONTES = {
     "MTE - Portarias SST": (
@@ -38,58 +46,128 @@ FONTES = {
         "registrar-comunicacao-de-acidente-de-trabalho-cat"
     ),
 
-"Fundacentro": (
+    "Fundacentro": (
         "https://www.gov.br/fundacentro/pt-br"
     )
 }
 
+
+# ============================================================
+# TEMAS
+# ============================================================
+
 TEMAS = {
+
     "NR-01 / GRO / PGR": [
-        "nr-01", "nr-1", "gro", "pgr",
-        "gerenciamento de riscos",
-        "programa de gerenciamento de riscos"
+        r"\bnr[\s-]?01\b",
+        r"\bnr[\s-]?1\b",
+        r"\bgro\b",
+        r"\bpgr\b",
+        r"gerenciamento de riscos",
+        r"programa de gerenciamento de riscos"
     ],
 
     "NR-17 / Ergonomia": [
-        "nr-17", "ergonomia", "ergonômica",
-        "ergonômico", "aet",
-        "avaliação ergonômica"
+        r"\bnr[\s-]?17\b",
+        r"ergonomia",
+        r"ergonômica",
+        r"ergonômico",
+        r"\baet\b",
+        r"avaliação ergonômica",
+        r"análise ergonômica"
     ],
 
     "Riscos psicossociais": [
-        "psicossocial", "psicossociais",
-        "organização do trabalho",
-        "saúde mental"
+        r"psicossocial",
+        r"psicossociais",
+        r"organização do trabalho",
+        r"saúde mental"
     ],
 
     "Acidentes e doenças ocupacionais": [
-        "acidente de trabalho",
-        "acidente do trabalho",
-        "doença ocupacional",
-        "doença relacionada ao trabalho",
-        "cat"
+        r"acidente de trabalho",
+        r"acidente do trabalho",
+        r"doença ocupacional",
+        r"doença relacionada ao trabalho",
+        r"\bcat\b"
     ],
 
     "Insalubridade / Periculosidade": [
-        "insalubridade",
-        "periculosidade"
+        r"insalubridade",
+        r"periculosidade"
     ],
 
     "eSocial / SST": [
-        "esocial",
-        "s-2210",
-        "s-2220",
-        "s-2240"
+        r"\besocial\b",
+        r"\bs-2210\b",
+        r"\bs-2220\b",
+        r"\bs-2240\b"
     ],
 
     "Segurança do Trabalho": [
-        "segurança do trabalho",
-        "saúde e segurança",
-        "saúde ocupacional",
-        "segurança e saúde no trabalho"
+        r"segurança do trabalho",
+        r"saúde e segurança",
+        r"saúde ocupacional",
+        r"segurança e saúde no trabalho"
     ]
 }
 
+
+# ============================================================
+# PALAVRAS QUE INDICAM CONTEÚDO INSTITUCIONAL
+# ============================================================
+
+PAGINAS_INSTITUCIONAIS = {
+    "portarias",
+    "portarias internas",
+    "sst portarias",
+    "instruções normativas",
+    "instrucoes normativas",
+    "legislação",
+    "legislacao",
+    "legislação de segurança e saúde no trabalho",
+    "normas regulamentadoras",
+    "normas regulamentadoras (nr)",
+    "normas regulamentadoras (nr) e legislação de segurança e saúde no trabalho",
+    "fiscalização de segurança e saúde no trabalho",
+    "sindicatos",
+    "cadastro de entidades",
+    "central sindical",
+    "contribuição sindical",
+    "mediacao",
+    "mediação",
+    "painel de relações do trabalho",
+    "galeria de aplicativos",
+    "categorias",
+    "esocial",
+    "iniciar",
+    "acessar",
+}
+
+
+# ============================================================
+# CAMINHOS QUE NÃO DEVEM ENTRAR NO RADAR
+# ============================================================
+
+CAMINHOS_BLOQUEADOS = [
+    "/servicos/",
+    "/apps/",
+    "/categorias",
+    "/composicao/orgaos-colegiados/",
+    "/acesso-a-informacao/",
+    "/participacao-social/",
+    "cadastro-cat.inss.gov.br",
+    "api.whatsapp.com",
+    "facebook.com",
+    "linkedin.com",
+    "twitter.com",
+    "telegram.me",
+]
+
+
+# ============================================================
+# BAIXAR PÁGINA
+# ============================================================
 
 def baixar_pagina(url):
 
@@ -111,14 +189,26 @@ def baixar_pagina(url):
     return resposta.text
 
 
+# ============================================================
+# CRIAR ID
+# ============================================================
+
 def criar_id(titulo, endereco):
 
-    texto = titulo.strip() + "|" + endereco.strip()
+    texto = (
+        titulo.strip()
+        + "|"
+        + endereco.strip()
+    )
 
     return hashlib.sha256(
         texto.encode("utf-8")
     ).hexdigest()
 
+
+# ============================================================
+# CARREGAR HISTÓRICO
+# ============================================================
 
 def carregar_historico():
 
@@ -147,6 +237,10 @@ def carregar_historico():
         }
 
 
+# ============================================================
+# SALVAR HISTÓRICO
+# ============================================================
+
 def salvar_historico(historico):
 
     with open(
@@ -162,6 +256,11 @@ def salvar_historico(historico):
             indent=2
         )
 
+
+# ============================================================
+# IDENTIFICAR TEMAS
+# ============================================================
+
 def identificar_temas(texto):
 
     texto = texto.lower()
@@ -170,9 +269,13 @@ def identificar_temas(texto):
 
     for tema, palavras in TEMAS.items():
 
-        for palavra in palavras:
+        for padrao in palavras:
 
-            if palavra.lower() in texto:
+            if re.search(
+                padrao,
+                texto,
+                flags=re.IGNORECASE
+            ):
 
                 encontrados.append(tema)
 
@@ -180,17 +283,125 @@ def identificar_temas(texto):
 
     return encontrados
 
+
+# ============================================================
+# VERIFICAR PÁGINA INSTITUCIONAL
+# ============================================================
+
+def eh_pagina_institucional(titulo, endereco):
+
+    titulo_lower = (
+        titulo.lower()
+        .strip()
+    )
+
+    endereco_lower = (
+        endereco.lower()
+        .strip()
+    )
+
+    # --------------------------------------------------------
+    # Título exato
+    # --------------------------------------------------------
+
+    if titulo_lower in PAGINAS_INSTITUCIONAIS:
+        return True
+
+    # --------------------------------------------------------
+    # Consultas
+    # --------------------------------------------------------
+
+    if (
+        titulo_lower.startswith("consultar ")
+        or titulo_lower.startswith("consulta ")
+    ):
+        return True
+
+    # --------------------------------------------------------
+    # Compartilhamento
+    # --------------------------------------------------------
+
+    palavras_compartilhamento = [
+        "whatsapp",
+        "facebook",
+        "linkedin",
+        "twitter",
+        "telegram",
+        "compartilhar",
+        "compartilhe",
+    ]
+
+    if any(
+        palavra in titulo_lower
+        or palavra in endereco_lower
+        for palavra in palavras_compartilhamento
+    ):
+        return True
+
+    # --------------------------------------------------------
+    # Caminhos bloqueados
+    # --------------------------------------------------------
+
+    if any(
+        caminho in endereco_lower
+        for caminho in CAMINHOS_BLOQUEADOS
+    ):
+        return True
+
+    # --------------------------------------------------------
+    # Designação administrativa
+    # --------------------------------------------------------
+
+    if (
+        "portarias de designação" in titulo_lower
+        or "designação de fiscais" in titulo_lower
+    ):
+        return True
+
+    # --------------------------------------------------------
+    # Páginas permanentes das NRs
+    #
+    # Exemplos:
+    # NR-1
+    # NR-01
+    # NR-12
+    # NR-35
+    #
+    # Mas NÃO:
+    # "Cursos sobre NR-12"
+    # "Alteração da NR-12"
+    # --------------------------------------------------------
+
+    if re.fullmatch(
+        r"nr[\s-]?\d{1,2}",
+        titulo_lower
+    ):
+        return True
+
+    return False
+
+
+# ============================================================
+# CLASSIFICAR IMPORTÂNCIA
+# ============================================================
+
 def classificar_importancia(titulo, temas):
 
     titulo_lower = titulo.lower()
 
-    texto_temas = " ".join(temas).lower()
+    texto_temas = " ".join(
+        temas
+    ).lower()
 
-    texto = titulo_lower + " " + texto_temas
+    texto = (
+        titulo_lower
+        + " "
+        + texto_temas
+    )
 
-    # ========================================================
-    # CONTEÚDOS QUE NÃO DEVEM GERAR ALERTA
-    # ========================================================
+    # --------------------------------------------------------
+    # CONTEÚDOS INFORMATIVOS
+    # --------------------------------------------------------
 
     termos_informativos = [
         "curso",
@@ -209,6 +420,9 @@ def classificar_importancia(titulo, temas):
         "consulta",
         "serviço",
         "serviços",
+        "aplicativo",
+        "aplicativos",
+        "congresso",
     ]
 
     conteudo_informativo = any(
@@ -216,13 +430,14 @@ def classificar_importancia(titulo, temas):
         for termo in termos_informativos
     )
 
-    # ========================================================
-    # INDICADORES DE ALTERAÇÃO NORMATIVA
-    # ========================================================
+    # --------------------------------------------------------
+    # ALTERAÇÃO NORMATIVA
+    # --------------------------------------------------------
 
     alteracoes = [
         "altera",
         "alteração",
+        "alteracoes",
         "altera a redação",
         "nova redação",
         "modifica",
@@ -243,24 +458,27 @@ def classificar_importancia(titulo, temas):
         for termo in alteracoes
     )
 
-    # ========================================================
-    # NORMAS RELEVANTES
-    # ========================================================
+    # --------------------------------------------------------
+    # NRs DE MAIOR INTERESSE
+    # --------------------------------------------------------
 
     nr_relevante = any(
-        termo in titulo_lower
-        for termo in [
-            "nr-01",
-            "nr-1",
-            "nr-17",
-            "nr-18",
-            "nr-35",
+        re.search(
+            padrao,
+            titulo_lower
+        )
+        for padrao in [
+            r"\bnr[\s-]?01\b",
+            r"\bnr[\s-]?1\b",
+            r"\bnr[\s-]?17\b",
+            r"\bnr[\s-]?18\b",
+            r"\bnr[\s-]?35\b",
         ]
     )
 
-    # ========================================================
+    # --------------------------------------------------------
     # TEMAS CRÍTICOS
-    # ========================================================
+    # --------------------------------------------------------
 
     tema_critico = any(
         termo in texto
@@ -277,9 +495,9 @@ def classificar_importancia(titulo, temas):
         ]
     )
 
-    # ========================================================
+    # --------------------------------------------------------
     # ERGONOMIA
-    # ========================================================
+    # --------------------------------------------------------
 
     ergonomia = any(
         termo in texto
@@ -293,9 +511,9 @@ def classificar_importancia(titulo, temas):
         ]
     )
 
-    # ========================================================
+    # --------------------------------------------------------
     # PGR / GRO
-    # ========================================================
+    # --------------------------------------------------------
 
     pgr_gro = any(
         termo in texto
@@ -307,9 +525,9 @@ def classificar_importancia(titulo, temas):
         ]
     )
 
-    # ========================================================
+    # --------------------------------------------------------
     # ALTERAÇÃO NORMATIVA DE ALTA RELEVÂNCIA
-    # ========================================================
+    # --------------------------------------------------------
 
     if eh_alteracao:
 
@@ -325,9 +543,9 @@ def classificar_importancia(titulo, temas):
         if pgr_gro:
             return "IMPORTANTE"
 
-    # ========================================================
+    # --------------------------------------------------------
     # ATOS OFICIAIS
-    # ========================================================
+    # --------------------------------------------------------
 
     ato_oficial = any(
         termo in titulo_lower
@@ -335,6 +553,7 @@ def classificar_importancia(titulo, temas):
             "portaria",
             "decreto",
             "instrução normativa",
+            "instrucoes normativas",
             "resolução",
             "lei ",
             "medida provisória",
@@ -353,16 +572,16 @@ def classificar_importancia(titulo, temas):
 
         return "ATENÇÃO"
 
-    # ========================================================
+    # --------------------------------------------------------
     # CURSOS, EVENTOS E SERVIÇOS
-    # ========================================================
+    # --------------------------------------------------------
 
     if conteudo_informativo:
         return "INFORMATIVO"
 
-    # ========================================================
+    # --------------------------------------------------------
     # CONTEÚDO TÉCNICO
-    # ========================================================
+    # --------------------------------------------------------
 
     if ergonomia:
         return "ATENÇÃO"
@@ -373,9 +592,9 @@ def classificar_importancia(titulo, temas):
     if pgr_gro:
         return "ATENÇÃO"
 
-    # ========================================================
+    # --------------------------------------------------------
     # ACIDENTES
-    # ========================================================
+    # --------------------------------------------------------
 
     if (
         "acidente de trabalho" in titulo_lower
@@ -383,11 +602,16 @@ def classificar_importancia(titulo, temas):
     ):
         return "ATENÇÃO"
 
-    # ========================================================
+    # --------------------------------------------------------
     # PADRÃO
-    # ========================================================
+    # --------------------------------------------------------
 
     return "INFORMATIVO"
+
+
+# ============================================================
+# EXTRAIR LINKS
+# ============================================================
 
 def extrair_links(html, fonte):
 
@@ -397,6 +621,8 @@ def extrair_links(html, fonte):
     )
 
     resultados = []
+
+    ids_desta_pagina = set()
 
     for link in soup.find_all(
         "a",
@@ -415,137 +641,61 @@ def extrair_links(html, fonte):
         if not titulo or not endereco:
             continue
 
-        # ====================================================
+        # ----------------------------------------------------
         # NORMALIZAR URL
-        # ====================================================
+        # ----------------------------------------------------
 
-        if endereco.startswith("/"):
+        endereco = urljoin(
+            "https://www.gov.br",
+            endereco
+        )
 
-            endereco = (
-                "https://www.gov.br"
-                + endereco
-            )
+        endereco = endereco.strip()
+
+        # ----------------------------------------------------
+        # SOMENTE HTTP/HTTPS
+        # ----------------------------------------------------
+
+        esquema = urlparse(
+            endereco
+        ).scheme.lower()
+
+        if esquema not in [
+            "http",
+            "https"
+        ]:
+            continue
 
         titulo_lower = titulo.lower()
         endereco_lower = endereco.lower()
 
-        # ====================================================
-        # IGNORAR LINKS DE COMPARTILHAMENTO
-        # ====================================================
+        # ----------------------------------------------------
+        # EVITAR ÂNCORAS E LINKS INTERNOS
+        # ----------------------------------------------------
 
-        palavras_compartilhamento = [
-            "whatsapp",
-            "facebook",
-            "linkedin",
-            "twitter",
-            "telegram",
-            "compartilhar",
-            "compartilhe"
-        ]
+        if endereco.startswith("#"):
+            continue
 
-        if any(
-            palavra in titulo_lower
-            or palavra in endereco_lower
-            for palavra in palavras_compartilhamento
+        # ----------------------------------------------------
+        # PÁGINAS INSTITUCIONAIS
+        # ----------------------------------------------------
+
+        if eh_pagina_institucional(
+            titulo,
+            endereco
         ):
             continue
 
-        # ====================================================
-        # IGNORAR SISTEMAS E PÁGINAS DE SERVIÇO
-        # ====================================================
-
-        caminhos_bloqueados = [
-            "/servicos/",
-            "/apps/",
-            "/categorias",
-            "/composicao/orgaos-colegiados/",
-            "cadastro-cat.inss.gov.br",
-        ]
-
-        if any(
-            caminho in endereco_lower
-            for caminho in caminhos_bloqueados
-        ):
-            continue
-
-        # ====================================================
-        # IGNORAR PÁGINAS INSTITUCIONAIS
-        # ====================================================
-
-        paginas_institucionais = [
-            "portarias",
-            "portarias internas",
-            "sst portarias",
-            "instruções normativas",
-            "instrucoes normativas",
-            "legislação",
-            "legislacao",
-            "normas regulamentadoras",
-            "normas regulamentadoras (nr)",
-            "normas regulamentadoras (nr) e legislação de segurança e saúde no trabalho",
-            "fiscalização de segurança e saúde no trabalho",
-            "sindicatos",
-            "cadastro de entidades",
-            "central sindical",
-            "contribuição sindical",
-            "mediação",
-            "painel de relações do trabalho",
-            "galeria de aplicativos",
-            "categorias",
-            "esocial",
-        ]
-
-        if titulo_lower in paginas_institucionais:
-            continue
-
-        # ====================================================
-        # IGNORAR CONSULTAS E PÁGINAS ADMINISTRATIVAS
-        # ====================================================
-
-        if (
-            titulo_lower.startswith("consultar ")
-            or titulo_lower.startswith("consulta ")
-            or titulo_lower.startswith("iniciar")
-            or titulo_lower.startswith("acessar")
-        ):
-            continue
-
-        if (
-            "portarias de designação" in titulo_lower
-            or "designação de fiscais" in titulo_lower
-        ):
-            continue
-
-        # ====================================================
-        # IGNORAR PÁGINAS PERMANENTES DAS NRs
-        # ====================================================
-
-        if titulo_lower.startswith("nr-"):
-
-            partes = titulo_lower.split(
-                " - ",
-                1
-            )
-
-            if len(partes) == 2:
-
-                numero_nr = (
-                    partes[0]
-                    .replace("nr-", "")
-                    .strip()
-                )
-
-                if numero_nr.isdigit():
-                    continue
-
-        # ====================================================
+        # ----------------------------------------------------
         # IDENTIFICAÇÃO DOS TEMAS
-        # ====================================================
-        
-        # Identifica o tema somente pelo título.
-        # A URL não participa da identificação para evitar
-        # falsos positivos em páginas institucionais.
-        
+        #
+        # IMPORTANTE:
+        # somente o título é usado.
+        #
+        # Isso evita que palavras presentes na URL
+        # criem falsos positivos.
+        # ----------------------------------------------------
+
         temas = identificar_temas(
             titulo
         )
@@ -553,14 +703,29 @@ def extrair_links(html, fonte):
         if not temas:
             continue
 
-        # ====================================================
-        # CRIAÇÃO DO REGISTRO
-        # ====================================================
+        # ----------------------------------------------------
+        # CRIAR ID
+        # ----------------------------------------------------
 
         identificador = criar_id(
             titulo,
             endereco
         )
+
+        # ----------------------------------------------------
+        # EVITAR DUPLICAÇÃO NA MESMA PÁGINA
+        # ----------------------------------------------------
+
+        if identificador in ids_desta_pagina:
+            continue
+
+        ids_desta_pagina.add(
+            identificador
+        )
+
+        # ----------------------------------------------------
+        # REGISTRO
+        # ----------------------------------------------------
 
         resultados.append({
 
@@ -588,6 +753,117 @@ def extrair_links(html, fonte):
     return resultados
 
 
+# ============================================================
+# LIMPAR DUPLICIDADES DO HISTÓRICO
+# ============================================================
+
+def limpar_historico(historico):
+
+    publicacoes = historico.get(
+        "publicacoes",
+        []
+    )
+
+    resultado = []
+
+    ids = set()
+
+    removidos = 0
+
+    for item in publicacoes:
+
+        titulo = item.get(
+            "titulo",
+            ""
+        )
+
+        endereco = item.get(
+            "url",
+            ""
+        )
+
+        identificador = item.get(
+            "id"
+        )
+
+        # ----------------------------------------------------
+        # Recriar ID quando necessário
+        # ----------------------------------------------------
+
+        if titulo and endereco:
+
+            novo_id = criar_id(
+                titulo,
+                endereco
+            )
+
+            identificador = novo_id
+
+            item["id"] = novo_id
+
+        # ----------------------------------------------------
+        # Remover duplicados
+        # ----------------------------------------------------
+
+        if identificador in ids:
+
+            removidos += 1
+
+            continue
+
+        ids.add(
+            identificador
+        )
+
+        # ----------------------------------------------------
+        # Remover páginas institucionais antigas
+        # ----------------------------------------------------
+
+        if eh_pagina_institucional(
+            titulo,
+            endereco
+        ):
+
+            removidos += 1
+
+            continue
+
+        # ----------------------------------------------------
+        # Corrigir temas antigos
+        # ----------------------------------------------------
+
+        temas = identificar_temas(
+            titulo
+        )
+
+        if not temas:
+
+            removidos += 1
+
+            continue
+
+        item["temas"] = temas
+
+        item["importancia"] = (
+            classificar_importancia(
+                titulo,
+                temas
+            )
+        )
+
+        resultado.append(
+            item
+        )
+
+    historico["publicacoes"] = resultado
+
+    return removidos
+
+
+# ============================================================
+# EXECUTAR
+# ============================================================
+
 def executar():
 
     print()
@@ -607,6 +883,51 @@ def executar():
 
     historico = carregar_historico()
 
+    # --------------------------------------------------------
+    # LIMPAR HISTÓRICO ANTIGO
+    # --------------------------------------------------------
+
+    quantidade_antes = len(
+        historico.get(
+            "publicacoes",
+            []
+        )
+    )
+
+    removidos = limpar_historico(
+        historico
+    )
+
+    quantidade_depois = len(
+        historico["publicacoes"]
+    )
+
+    if removidos > 0:
+
+        print()
+        print(
+            "Limpeza do histórico:"
+        )
+
+        print(
+            "Registros anteriores:",
+            quantidade_antes
+        )
+
+        print(
+            "Registros removidos:",
+            removidos
+        )
+
+        print(
+            "Registros válidos:",
+            quantidade_depois
+        )
+
+    # --------------------------------------------------------
+    # IDs EXISTENTES
+    # --------------------------------------------------------
+
     ids_existentes = {
         item.get("id")
         for item in historico["publicacoes"]
@@ -614,9 +935,9 @@ def executar():
 
     novas = []
 
-    # ========================================================
+    # --------------------------------------------------------
     # CONSULTAR FONTES
-    # ========================================================
+    # --------------------------------------------------------
 
     for nome_fonte, endereco in FONTES.items():
 
@@ -644,17 +965,20 @@ def executar():
 
             for item in resultados:
 
-                if item["id"] not in ids_existentes:
+                if item["id"] in ids_existentes:
+                    continue
 
-                    historico[
-                        "publicacoes"
-                    ].append(item)
+                historico[
+                    "publicacoes"
+                ].append(item)
 
-                    ids_existentes.add(
-                        item["id"]
-                    )
+                ids_existentes.add(
+                    item["id"]
+                )
 
-                    novas.append(item)
+                novas.append(
+                    item
+                )
 
         except Exception as erro:
 
@@ -663,11 +987,9 @@ def executar():
                 erro
             )
 
-    # ========================================================
+    # --------------------------------------------------------
     # LIMITAR HISTÓRICO
-    # ========================================================
-
-    # Mantemos os 1.000 registros mais recentes.
+    # --------------------------------------------------------
 
     historico["publicacoes"] = (
         historico["publicacoes"][-1000:]
@@ -677,9 +999,9 @@ def executar():
         historico
     )
 
-    # ========================================================
+    # --------------------------------------------------------
     # RESULTADO
-    # ========================================================
+    # --------------------------------------------------------
 
     print()
     print("=" * 70)
@@ -730,6 +1052,29 @@ def executar():
             "Nenhuma nova publicação relevante."
         )
 
+    # --------------------------------------------------------
+    # RESUMO DO HISTÓRICO
+    # --------------------------------------------------------
+
+    contagem = {
+        "IMPORTANTE": 0,
+        "ATENÇÃO": 0,
+        "INFORMATIVO": 0
+    }
+
+    for item in historico["publicacoes"]:
+
+        importancia = item.get(
+            "importancia",
+            "INFORMATIVO"
+        )
+
+        if importancia in contagem:
+
+            contagem[
+                importancia
+            ] += 1
+
     print()
     print(
         "Total armazenado no histórico:",
@@ -738,11 +1083,30 @@ def executar():
         )
     )
 
+    print(
+        "IMPORTANTE:",
+        contagem["IMPORTANTE"]
+    )
+
+    print(
+        "ATENÇÃO:",
+        contagem["ATENÇÃO"]
+    )
+
+    print(
+        "INFORMATIVO:",
+        contagem["INFORMATIVO"]
+    )
+
     print()
     print(
         "SST Radar finalizado."
     )
 
+
+# ============================================================
+# INÍCIO
+# ============================================================
 
 if __name__ == "__main__":
 
