@@ -2,17 +2,17 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 01/09/2026 11:02:40
+**Gerado em:** 01/09/2026 12:53:11
 
-**Total de registros:** 36
+**Total de registros:** 20
 
 ---
 
 ## 📊 Resumo
 
 - 🔴 Importantes: 0
-- 🟠 Atenção: 5
-- 🔵 Informativas: 31
+- 🟠 Atenção: 4
+- 🔵 Informativas: 16
 
 ## 🟠 Publicações que merecem atenção
 
@@ -69,20 +69,6 @@
 
 
 **Link:** https://www.gov.br/inss/pt-br/direitos-e-deveres/beneficios-por-incapacidade/diferenca-entre-auxilio-por-incapacidade-temporaria-comum-ou-decorrente-de-acidente-de-trabalho
-
----
-
-### Comissão Nacional de Erradicação do Trabalho Infantil (CONAETI)
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** NR-17 / Ergonomia
-
-**Importância:** ATENÇÃO
-**Motivo:** NR-1 / Gerenciamento de Riscos; NR-17 / Ergonomia; Ergonomia
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/composicao/orgaos-colegiados/comissao-nacional-de-erradicacao-do-trabalho-infantil-conaeti
 
 ---
 
@@ -242,48 +228,6 @@
 
 ---
 
-### Comunicações e Requerimentos
-
-**Fonte:** INSS - CAT
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/pt-br/categorias/trabalho-e-previdencia/previdencia/comunicacoes-e-requerimentos
-
----
-
-### Previdência
-
-**Fonte:** INSS - CAT
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/pt-br/categorias/trabalho-e-previdencia/previdencia
-
----
-
-### Trabalho, Emprego e Previdência
-
-**Fonte:** INSS - CAT
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/pt-br/categorias/trabalho-e-previdencia
-
----
-
 ### Excluir Mensalidade de Associação ou Sindicato no Benefício
 
 **Fonte:** INSS - Notícias
@@ -295,20 +239,6 @@
 
 
 **Link:** https://www.gov.br/pt-br/servicos/solicitar-exclusao-de-desconto-de-mensalidade-associativa-em-beneficio-previdenciario
-
----
-
-### Categorias de segurados
-
-**Fonte:** INSS - Notícias
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** CAT
-
-
-**Link:** https://www.gov.br/inss/pt-br/saiba-mais/seus-direitos-e-deveres/categorias-de-segurados
 
 ---
 
@@ -340,157 +270,15 @@
 
 ---
 
-### Galeria de Aplicativos
+### Cadastro de Empregadores em Ajustamento de Conduta (CEAC) - Normativos
 
 **Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** CAT
-
-
-**Link:** https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos
-
----
-
-### Categorias
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** CAT
-
-
-**Link:** https://www.gov.br/pt-br/categorias
-
----
-
-### Registro de Instrumento Coletivo de Trabalho (Convenção, Acordo e Termo Aditivo)
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
 
 **Importância:** INFORMATIVO
 **Motivo:** Conteúdo relacionado a SST
 
 
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/convencoes-e-acordos-coletivos-de-trabalho
-
----
-
-### Painel de Relações do Trabalho
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/portal-de-relacoes-do-trabalho
-
----
-
-### Mediação
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/mediacao
-
----
-
-### Contribuição Sindical
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/contribuicao-sindical
-
----
-
-### Central Sindical
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/central-sindical
-
----
-
-### Cadastro de Entidades
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos/cadastro-de-entidades
-
----
-
-### Sindicatos
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Acidentes e doenças ocupacionais
-
-**Importância:** INFORMATIVO
-**Motivo:** CAT
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/sindicatos
-
----
-
-### eSocial
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** eSocial / SST
-
-**Importância:** INFORMATIVO
-**Motivo:** eSocial / SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/e-social
-
----
-
-### Fiscalização de Segurança e Saúde no Trabalho
-
-**Fonte:** MTE - Portarias SST
-
-**Temas:** Segurança do Trabalho
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho
+**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/cadastro-de-empregadores-em-ajustamento-de-conduta-ceac-normativos
 
 ---
 
