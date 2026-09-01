@@ -326,6 +326,41 @@ def executar():
 
     removidas = 0
 
+        # ========================================================
+    # REMOVER DUPLICIDADES
+    # ========================================================
+
+    ids_vistos = set()
+
+    publicacoes_sem_duplicatas = []
+
+    for item in publicacoes:
+
+        identificador = item.get(
+            "id",
+            ""
+        )
+
+        if identificador in ids_vistos:
+            removidas += 1
+            continue
+
+        ids_vistos.add(
+            identificador
+        )
+
+        publicacoes_sem_duplicatas.append(
+            item
+        )
+
+    publicacoes = (
+        publicacoes_sem_duplicatas
+    )
+
+    historico["publicacoes"] = (
+        publicacoes
+    )
+
     for item in publicacoes:
 
         titulo = item.get(
