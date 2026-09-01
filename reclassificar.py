@@ -211,9 +211,10 @@ def classificar_importancia(titulo, temas):
 
     return "INFORMATIVO"
 
-def eh_pagina_institucional(titulo):
+def eh_pagina_institucional(titulo, url=""):
 
     titulo_lower = titulo.lower().strip()
+    url_lower = url.lower().strip()
 
     paginas = [
         "portarias",
@@ -222,10 +223,20 @@ def eh_pagina_institucional(titulo):
         "instruções normativas",
         "instrucoes normativas",
         "legislação",
-        "legislação de segurança e saúde no trabalho",
+        "legislacao",
         "normas regulamentadoras",
         "normas regulamentadoras (nr)",
         "normas regulamentadoras (nr) e legislação de segurança e saúde no trabalho",
+        "fiscalização de segurança e saúde no trabalho",
+        "esocial",
+        "sindicatos",
+        "cadastro de entidades",
+        "central sindical",
+        "contribuição sindical",
+        "mediação",
+        "painel de relações do trabalho",
+        "categorias",
+        "galeria de aplicativos",
     ]
 
     if titulo_lower in paginas:
@@ -258,6 +269,19 @@ def eh_pagina_institucional(titulo):
 
     if "designação de fiscais" in titulo_lower:
         return True
+
+    # Caminhos que normalmente indicam páginas institucionais
+    caminhos_institucionais = [
+        "/categorias",
+        "/apps/",
+        "/composicao/orgaos-colegiados/",
+        "/servicos/sindicatos",
+    ]
+
+    for caminho in caminhos_institucionais:
+
+        if caminho in url_lower:
+            return True
 
     return False
 
@@ -309,7 +333,10 @@ def executar():
             ""
         )
 
-        if eh_pagina_institucional(titulo):
+        if eh_pagina_institucional(
+            titulo,
+            item.get("url", "")
+        ):
 
             removidas += 1
 
