@@ -2,9 +2,9 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 01/09/2026 13:06:38
+**Gerado em:** 01/09/2026 13:17:57
 
-**Total de registros:** 20
+**Total de registros:** 19
 
 ---
 
@@ -12,7 +12,7 @@
 
 - 🔴 Importantes: 0
 - 🟠 Atenção: 4
-- 🔵 Informativas: 16
+- 🔵 Informativas: 15
 
 ## 🟠 Publicações que merecem atenção
 
@@ -267,18 +267,6 @@
 
 
 **Link:** https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/tabela-de-classificacao-tipificacao-de-nrs-e-anexos-2022_12_14.pdf
-
----
-
-### Cadastro de Empregadores em Ajustamento de Conduta (CEAC) - Normativos
-
-**Fonte:** MTE - Portarias SST
-
-**Importância:** INFORMATIVO
-**Motivo:** Conteúdo relacionado a SST
-
-
-**Link:** https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/cadastro-de-empregadores-em-ajustamento-de-conduta-ceac-normativos
 
 ---
 
