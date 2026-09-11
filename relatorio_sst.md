@@ -2,19 +2,33 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 10/09/2026 11:02:40
+**Gerado em:** 11/09/2026 11:02:41
 
-**Total de registros:** 3
+**Total de registros:** 4
 
 ---
 
 ## 📊 Resumo
 
 - 🔴 Importantes: 0
-- 🟠 Atenção: 1
+- 🟠 Atenção: 2
 - 🔵 Informativas: 2
 
 ## 🟠 Publicações que merecem atenção
+
+### Pesquisa apresenta índice para monitorar impactos do agronegócio na saúde e no ambiente em Mato Grosso Estudo publicado na Revista Brasileira de Saúde Ocupacional analisa dados sociais, ambientais, sanitários e ocupacionais entre 1990 e 2022
+
+**Fonte:** Fundacentro
+
+**Temas:** Segurança do Trabalho
+
+**Importância:** ATENÇÃO
+**Motivo:** PGR / GRO
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/pesquisa-apresenta-indice-para-monitorar-impactos-do-agronegocio-na-saude-e-no-ambiente-em-mato-grosso
+
+---
 
 ### Diferença entre auxílio por incapacidade temporária comum ou decorrente de acidente de trabalho
 
