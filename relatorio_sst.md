@@ -2,9 +2,9 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 16/09/2026 11:02:39
+**Gerado em:** 17/09/2026 11:02:38
 
-**Total de registros:** 4
+**Total de registros:** 5
 
 ---
 
@@ -12,7 +12,7 @@
 
 - 🔴 Importantes: 0
 - 🟠 Atenção: 2
-- 🔵 Informativas: 2
+- 🔵 Informativas: 3
 
 ## 🟠 Publicações que merecem atenção
 
@@ -45,6 +45,20 @@
 ---
 
 ## 🔵 Publicações informativas
+
+### Seminário discute urgência na regulamentação de Segurança e Saúde no Trabalho para o setor de energias renováveis A complexidade dos canteiros de obras dos parques oferecem inúmeros riscos dos mais diversos graus, mas os critérios de SST seguem pulverizados em diferentes normas
+
+**Fonte:** Fundacentro
+
+**Temas:** Segurança do Trabalho
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/seminario-discute-urgencia-na-regulamentacao-de-seguranca-e-saude-no-trabalho-para-o-setor-de-energias-renovaveis
+
+---
 
 ### I Congresso Regional de Saúde e Segurança no Trabalho na Pesca Artesanal prorroga prazo para submissão de propostas Submissões de Grupos de Trabalho, Oficinas e Espaços de Trocas e Experiências podem ser realizadas até 2 de agosto; já o novo período para envio de atividades, trabalhos técnicos e científicos é de 10 a 31 de agosto
 
