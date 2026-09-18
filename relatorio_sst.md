@@ -2,9 +2,9 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 17/09/2026 11:02:38
+**Gerado em:** 18/09/2026 11:02:40
 
-**Total de registros:** 5
+**Total de registros:** 6
 
 ---
 
@@ -12,7 +12,7 @@
 
 - 🔴 Importantes: 0
 - 🟠 Atenção: 2
-- 🔵 Informativas: 3
+- 🔵 Informativas: 4
 
 ## 🟠 Publicações que merecem atenção
 
@@ -45,6 +45,20 @@
 ---
 
 ## 🔵 Publicações informativas
+
+### Seminário discute urgência na regulamentação de Segurança e Saúde no Trabalho para o setor de energias renováveis A complexidade dos canteiros de obras dos parques oferece inúmeros riscos dos mais diversos graus, mas os critérios de SST seguem pulverizados em diferentes normas
+
+**Fonte:** Fundacentro
+
+**Temas:** Segurança do Trabalho
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/seminario-discute-urgencia-na-regulamentacao-de-seguranca-e-saude-no-trabalho-para-o-setor-de-energias-renovaveis
+
+---
 
 ### Seminário discute urgência na regulamentação de Segurança e Saúde no Trabalho para o setor de energias renováveis A complexidade dos canteiros de obras dos parques oferecem inúmeros riscos dos mais diversos graus, mas os critérios de SST seguem pulverizados em diferentes normas
 
