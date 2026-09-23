@@ -65,6 +65,39 @@
       ],
       "importancia": "INFORMATIVO",
       "data_coleta": "2026-09-18T11:02:37.269992"
+    },
+    {
+      "id": "99302b1e319e6ada792c2ed07f98e69a9485ea0f0bb3b693573315236ee4ba6a",
+      "titulo": "Curso sobre Análise Ergonômica do Trabalho contribui para prevenção de agravos à saúde e construção de sistemas seguros Aulas são on-line, e as inscrições gratuitas ficam abertas permanentemente",
+      "url": "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/curso-sobre-analise-ergonomica-do-trabalho-contribui-para-prevencao-de-agravos-a-saude-e-construcao-de-sistemas-seguros",
+      "fonte": "Fundacentro",
+      "temas": [
+        "NR-17 / Ergonomia"
+      ],
+      "importancia": "INFORMATIVO",
+      "data_coleta": "2026-09-23T11:02:38.169720"
+    },
+    {
+      "id": "34d16c99bb9608f7e6cff04eb967018752b0212ad14aa3b13eb65e287cfd1c8d",
+      "titulo": "Relatório técnico aborda segurança e saúde na agricultura familiar em Nova Friburgo Análise identifica riscos ocupacionais e aspectos psicossociais do trabalho e apresenta medidas de prevenção",
+      "url": "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/relatorio-tecnico-aborda-seguranca-e-saude-na-agricultura-familiar-em-nova-friburgo",
+      "fonte": "Fundacentro",
+      "temas": [
+        "Riscos psicossociais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-09-23T11:02:38.169910"
+    },
+    {
+      "id": "ddd7082914e1ef67a335b706ae0a6aff35992ae1ec104086a511c379a0a18920",
+      "titulo": "Porteiros ganham folheto dedicado aos riscos no trabalho Material se baseia nas NR-17 e NR-24 e tem download gratuito",
+      "url": "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/porteiros-ganham-folheto-dedicado-aos-riscos-no-trabalho",
+      "fonte": "Fundacentro",
+      "temas": [
+        "NR-17 / Ergonomia"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-09-23T11:02:38.170176"
     }
   ]
 }
