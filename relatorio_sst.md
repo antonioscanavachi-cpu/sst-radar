@@ -2,19 +2,47 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 22/09/2026 11:02:43
+**Gerado em:** 23/09/2026 11:02:43
 
-**Total de registros:** 6
+**Total de registros:** 9
 
 ---
 
 ## 📊 Resumo
 
 - 🔴 Importantes: 0
-- 🟠 Atenção: 2
-- 🔵 Informativas: 4
+- 🟠 Atenção: 4
+- 🔵 Informativas: 5
 
 ## 🟠 Publicações que merecem atenção
+
+### Porteiros ganham folheto dedicado aos riscos no trabalho Material se baseia nas NR-17 e NR-24 e tem download gratuito
+
+**Fonte:** Fundacentro
+
+**Temas:** NR-17 / Ergonomia
+
+**Importância:** ATENÇÃO
+**Motivo:** NR-1 / Gerenciamento de Riscos; NR-17 / Ergonomia; Ergonomia
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/porteiros-ganham-folheto-dedicado-aos-riscos-no-trabalho
+
+---
+
+### Relatório técnico aborda segurança e saúde na agricultura familiar em Nova Friburgo Análise identifica riscos ocupacionais e aspectos psicossociais do trabalho e apresenta medidas de prevenção
+
+**Fonte:** Fundacentro
+
+**Temas:** Riscos psicossociais
+
+**Importância:** ATENÇÃO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/relatorio-tecnico-aborda-seguranca-e-saude-na-agricultura-familiar-em-nova-friburgo
+
+---
 
 ### Pesquisa apresenta índice para monitorar impactos do agronegócio na saúde e no ambiente em Mato Grosso Estudo publicado na Revista Brasileira de Saúde Ocupacional analisa dados sociais, ambientais, sanitários e ocupacionais entre 1990 e 2022
 
@@ -45,6 +73,20 @@
 ---
 
 ## 🔵 Publicações informativas
+
+### Curso sobre Análise Ergonômica do Trabalho contribui para prevenção de agravos à saúde e construção de sistemas seguros Aulas são on-line, e as inscrições gratuitas ficam abertas permanentemente
+
+**Fonte:** Fundacentro
+
+**Temas:** NR-17 / Ergonomia
+
+**Importância:** INFORMATIVO
+**Motivo:** NR-1 / Gerenciamento de Riscos; NR-17 / Ergonomia; Ergonomia
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/setembro/curso-sobre-analise-ergonomica-do-trabalho-contribui-para-prevencao-de-agravos-a-saude-e-construcao-de-sistemas-seguros
+
+---
 
 ### Seminário discute urgência na regulamentação de Segurança e Saúde no Trabalho para o setor de energias renováveis A complexidade dos canteiros de obras dos parques oferece inúmeros riscos dos mais diversos graus, mas os critérios de SST seguem pulverizados em diferentes normas
 
