@@ -2,19 +2,33 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 01/10/2026 17:10:45
+**Gerado em:** 02/10/2026 16:24:19
 
-**Total de registros:** 9
+**Total de registros:** 11
 
 ---
 
 ## 📊 Resumo
 
 - 🔴 Importantes: 0
-- 🟠 Atenção: 4
-- 🔵 Informativas: 5
+- 🟠 Atenção: 5
+- 🔵 Informativas: 6
 
 ## 🟠 Publicações que merecem atenção
+
+### Pesquisador deixa legado de escutas múltiplas e plurisdisciplinaridade para SST Ao reconhecer a centralidade do trabalho, economia da cooperação, ergonomia da atividade e psicodinâmica do trabalho foram utilizadas como alicerces teóricos em trajetória de pesquisa
+
+**Fonte:** Fundacentro
+
+**Temas:** NR-17 / Ergonomia
+
+**Importância:** ATENÇÃO
+**Motivo:** NR-1 / Gerenciamento de Riscos; NR-17 / Ergonomia; Ergonomia
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/outubro/pesquisador-deixa-legado-de-escutas-multiplas-e-plurisdisciplinaridade-para-sst
+
+---
 
 ### Porteiros ganham folheto dedicado aos riscos no trabalho Material se baseia nas NR-17 e NR-24 e tem download gratuito
 
@@ -73,6 +87,20 @@
 ---
 
 ## 🔵 Publicações informativas
+
+### CTPP aprova texto para NR 21 sobre trabalho a céu aberto Regimento da Comissão Tripartite para Política Nacional de Segurança e Saúde no Trabalho também é aprovado
+
+**Fonte:** Fundacentro
+
+**Temas:** Segurança do Trabalho
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/outubro/ctpp-aprova-texto-para-nr-21-sobre-trabalho-a-ceu-aberto
+
+---
 
 ### Curso sobre Análise Ergonômica do Trabalho contribui para prevenção de agravos à saúde e construção de sistemas seguros Aulas são on-line, e as inscrições gratuitas ficam abertas permanentemente
 
