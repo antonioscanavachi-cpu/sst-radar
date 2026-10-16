@@ -2,19 +2,47 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 15/10/2026 15:23:39
+**Gerado em:** 16/10/2026 15:03:48
 
-**Total de registros:** 11
+**Total de registros:** 13
 
 ---
 
 ## 📊 Resumo
 
 - 🔴 Importantes: 0
-- 🟠 Atenção: 5
+- 🟠 Atenção: 7
 - 🔵 Informativas: 6
 
 ## 🟠 Publicações que merecem atenção
+
+### Estudos analisam impactos das condições de trabalho na saúde do docente Publicações científicas abordam saúde mental, organização do trabalho e fatores relacionados ao adoecimento
+
+**Fonte:** Fundacentro
+
+**Temas:** Riscos psicossociais
+
+**Importância:** ATENÇÃO
+**Motivo:** Riscos psicossociais / Saúde mental
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/outubro/estudos-analisam-impactos-das-condicoes-de-trabalho-na-saude-do-docente
+
+---
+
+### Valorização da Vida: INSS oferece benefício em casos de incapacidade relacionada à saúde mental
+
+**Fonte:** INSS - Notícias
+
+**Temas:** Riscos psicossociais
+
+**Importância:** ATENÇÃO
+**Motivo:** Riscos psicossociais / Saúde mental
+
+
+**Link:** https://www.gov.br/inss/pt-br/assuntos/noticias/valorizacao-da-vida-inss-oferece-beneficio-em-casos-de-incapacidade-relacionada-a-saude-mental
+
+---
 
 ### Pesquisador deixa legado de escutas múltiplas e plurisdisciplinaridade para SST Ao reconhecer a centralidade do trabalho, economia da cooperação, ergonomia da atividade e psicodinâmica do trabalho foram utilizadas como alicerces teóricos em trajetória de pesquisa
 
