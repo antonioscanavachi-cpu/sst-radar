@@ -120,6 +120,28 @@
       ],
       "importancia": "ATENÇÃO",
       "data_coleta": "2026-10-02T16:24:16.879521"
+    },
+    {
+      "id": "aa4944c2ee406f0a7838b4045c6319dbd80f674fab7a2a3cfec2b4c980378660",
+      "titulo": "Valorização da Vida: INSS oferece benefício em casos de incapacidade relacionada à saúde mental",
+      "url": "https://www.gov.br/inss/pt-br/assuntos/noticias/valorizacao-da-vida-inss-oferece-beneficio-em-casos-de-incapacidade-relacionada-a-saude-mental",
+      "fonte": "INSS - Notícias",
+      "temas": [
+        "Riscos psicossociais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-10-16T15:03:42.008031"
+    },
+    {
+      "id": "ce59530e0bc146265508a067c1eb2feb5a806d66fceafa2cc5cad14ca6cfcf7b",
+      "titulo": "Estudos analisam impactos das condições de trabalho na saúde do docente Publicações científicas abordam saúde mental, organização do trabalho e fatores relacionados ao adoecimento",
+      "url": "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/outubro/estudos-analisam-impactos-das-condicoes-de-trabalho-na-saude-do-docente",
+      "fonte": "Fundacentro",
+      "temas": [
+        "Riscos psicossociais"
+      ],
+      "importancia": "ATENÇÃO",
+      "data_coleta": "2026-10-16T15:03:45.133449"
     }
   ]
 }
