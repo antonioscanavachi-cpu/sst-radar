@@ -2,9 +2,9 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 15/11/2026 17:29:13
+**Gerado em:** 16/11/2026 20:43:26
 
-**Total de registros:** 13
+**Total de registros:** 14
 
 ---
 
@@ -12,7 +12,7 @@
 
 - 🔴 Importantes: 0
 - 🟠 Atenção: 7
-- 🔵 Informativas: 6
+- 🔵 Informativas: 7
 
 ## 🟠 Publicações que merecem atenção
 
@@ -115,6 +115,20 @@
 ---
 
 ## 🔵 Publicações informativas
+
+### Tecnologista da Fundacentro recebe comenda da Animaseg por contribuições à segurança e saúde no trabalho Trajetória na Fundacentro reúne estudos sobre exposição a campos eletromagnéticos, jovens aprendizes e assédio no trabalho
+
+**Fonte:** Fundacentro
+
+**Temas:** Segurança do Trabalho
+
+**Importância:** INFORMATIVO
+**Motivo:** Conteúdo relacionado a SST
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/novembro/tecnologista-da-fundacentro-recebe-comenda-da-animaseg-por-contribuicoes-a-seguranca-e-saude-no-trabalho
+
+---
 
 ### CTPP aprova texto para NR 21 sobre trabalho a céu aberto Regimento da Comissão Tripartite para Política Nacional de Segurança e Saúde no Trabalho também é aprovado
 
