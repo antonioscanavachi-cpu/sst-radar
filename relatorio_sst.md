@@ -2,9 +2,9 @@
 
 ## Relatório de monitoramento
 
-**Gerado em:** 17/11/2026 19:28:00
+**Gerado em:** 18/11/2026 19:10:20
 
-**Total de registros:** 14
+**Total de registros:** 15
 
 ---
 
@@ -12,7 +12,7 @@
 
 - 🔴 Importantes: 0
 - 🟠 Atenção: 7
-- 🔵 Informativas: 7
+- 🔵 Informativas: 8
 
 ## 🟠 Publicações que merecem atenção
 
@@ -115,6 +115,20 @@
 ---
 
 ## 🔵 Publicações informativas
+
+### Lançamento de livro sobre Ergonomia da Atividade e Laboratório de Mudanças acontece em São Paulo Evento presencial na Fundacentro apresenta intervenções formativas dentro do projeto Itapar e debate como as abordagens participativas podem transformar o trabalho
+
+**Fonte:** Fundacentro
+
+**Temas:** NR-17 / Ergonomia
+
+**Importância:** INFORMATIVO
+**Motivo:** NR-1 / Gerenciamento de Riscos; NR-17 / Ergonomia; Ergonomia
+
+
+**Link:** https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/novembro/lancamento-de-livro-sobre-ergonomia-da-atividade-e-laboratorio-de-mudancas-acontece-em-sao-paulo
+
+---
 
 ### Tecnologista da Fundacentro recebe comenda da Animaseg por contribuições à segurança e saúde no trabalho Trajetória na Fundacentro reúne estudos sobre exposição a campos eletromagnéticos, jovens aprendizes e assédio no trabalho
 
